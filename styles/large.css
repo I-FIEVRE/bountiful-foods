@@ -1,34 +1,70 @@
-@media only screen and (min-width: 67em) {
+@media only screen and (min-width: 73.5em) {
     header, nav, main, section, footer {
-        max-width: 1450px;
+        max-width: 1800px;
     }
-    nav a {
-        font-size: 1.6rem;
+    header {margin-top: 1rem;}
+    nav button { display: none; }
+    #primaryNav1 { display: grid;}
+    #primaryNav { display:none;}
+    .bountiful-nav {
+        display: grid;
+        margin: auto 1rem;
+        grid-template-columns: 20% 60% 20%;
+        grid-template-areas:'image nav-li social';
+        align-items: center;
     }
-    main h1 {
-        font-size: 1.6rem;
-    }    
-    main h2 {
-        font-size: 1.4rem;
-    } 
-    main h3 {
-        font-size: 1.3rem;
+    .image { grid-area: image;}
+    #logo {
+        border-radius: 50%;
+        max-width: 180px;   
     }
-    main p {
-        font-size: 1.2rem;
-        padding-left: 100px;
-        padding-right: 100px;
+    #logo:hover { max-width: 190px;}
+    .nav-li {grid-area: nav-li;}
+    .bountiful-nav ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.4rem;
     }
-    .maria {
-        grid-column: 2/3;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
+    .bountiful-nav ul li a {
+        display: block;
+        color: var(--nav-link-color);
+        background-color: var(--nav-background-color);
+        font-weight: bold;
+        text-align: center;
+        min-width: 120px;
+        padding: 0.5em;
+        margin: 0.2em;
+        text-decoration: none;
+        transition: 0.5s;
     }
-    .luis {
-        grid-column: 4/5;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
+    .social {
+        grid-area: social;  
     }
+    .social {
+        display: flex;
+        flex-direction: column;
+        border: 3px inset #74bc2c;
+        border-radius: 25px;
+        padding: 0.5rem;
+        margin: 1rem auto;
+        max-width: 150px;
+      }
+    .soci {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 0.2rem;
+        margin: 0.5rem;
+        text-align: center;
+    }
+    .social h3 {
+        display: inline-block;
+        text-align: center;
+        margin: 1rem 1rem 0 1rem;
+    }
+    .social hr {
+        height: 2px;
+        margin: 1rem;
+      }
     footer p {
         font-size: 1rem;
     }

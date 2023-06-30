@@ -9,7 +9,7 @@
     <meta name="description" content="Bountiful Foods homepage by Isabelle FIEVRE for wdd230 final project">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">   
-    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
     <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&display=swap" rel="stylesheet">
@@ -21,25 +21,24 @@
             <ul class="nav-li" id="primaryNav1">
                 <li><a class="active" href="#">Home</a></li>
                 <li><a href="#">Fresh</a></li>
-                <li><a href="#">About US</a></li>
+                <li><a href="#">About Us</a></li>
                 <li><a href="#">Resource</a></li>
-                <li><a href="#">Site Plan</a></li>
             </ul>
             <div class="social">
-                <h2>Social</h2>
+                <h3>Social</h3>
+                <hr>
                 <div class="soci">
                     <a href="https://facebook.com" target="_blank"><img class="facebook" src="images/facebook-blue-48.png" alt="facebook icon"></a>
                     <a href="https://www.linkedin.com" target="_blank"><img class="linkedin" src="images/in-blue-48.png" alt="linkedin icon"></a>
                     <a href="https://www.instagram.com/" target="_blank"><img class="instagram" src="images/instagram-48.png" alt="facebook icon"></a>
                 </div>
             </div>
-            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
-            <ul class="try" id="primaryNav">
-                <li><a active href="index.html">Home</a></li>
+            <button id="hamburgerBtn"><span>&#9776; Menu</span><span>X</span></button>
+           <ul class="try" id="primaryNav">
+                <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="fresh.html">Fresh</a></li>
-                <li><a href="about-us.html">About US</a></li>
+                <li><a href="about-us.html">About Us</a></li>
                 <li><a href="resource.html">Resource</a></li>
-                <li><a href="site-plan.html">Site Plan</a></li>
             </ul>  
         </nav>            
         <div class="date">
@@ -86,7 +85,7 @@
     <footer>
         <div class="grid-footer">
             <div class="logo-footer">
-                <span><a href="index.html"><img class="logo" src="images/logo-r.webp" alt="Website logo showing a mountain"></a></span>
+                <span><a href="index.html"><img class="logo" src="images/logo2.webp" alt="Website logo"></a></span>
                 <section class="address">
                     <h2>Bountiful Foods</h2>
                     <p class="lf">Via Carlo Ferrero, 29<br>10098 Rivoli (TO), Italy</p>
@@ -106,5 +105,6 @@
     <script src="scripts/main.js"></script>
     <script src="scripts/header.js"></script>
     <script src="scripts/weatherapi.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>

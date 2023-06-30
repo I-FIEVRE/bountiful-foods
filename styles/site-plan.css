@@ -163,24 +163,18 @@ nav ul li a {
 nav ul li a:hover {
   color: var(--nav-hover-link-color);
 	background-color: var(--nav-hover-background-color);
-	color: #ffffff;
 	font-weight: bold;
 }
-.active {
-    font-weight: bold;
-	  color: #ffffff;
-    background-color: #2a8533;
-}
+.active { background-color: #2a8533;}
 nav {
   display: grid;
   grid-template-columns: 20% 60% 20%;
   grid-template-areas:'image nav-li social';
   align-items: center;
-  
 }
 .image {
   grid-area: image;
-  background-color: #ffffff;
+  background-color: var(--accent1-color);
 }
 .nav-li {grid-area: nav-li;}
 .social {
@@ -192,7 +186,7 @@ nav {
   padding: 0.5rem;
   padding-bottom: 1rem;
   margin: auto 2rem;
-  max-width: 150xp;
+  max-width: 150px;
 }
 .social hr {
   height: 2px;
