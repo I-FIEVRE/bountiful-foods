@@ -48,7 +48,7 @@ h2 {
 hr {
   height: 3px;
   margin: 35px 0;
-  background: var(--accent3-color);
+  background: var(--secondary-color);
 }
 header {
   padding: 1em;
@@ -141,7 +141,6 @@ p.colored {
   border-right: 1px solid;
 }
 nav {
-	list-style-type: none;
 	line-height: 1.5em;
 	font-size: 1.5rem;
 }
