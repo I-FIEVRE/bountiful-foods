@@ -35,7 +35,18 @@
         grid-area: date;
         text-align: end;
     }
-
+    .home-title { font-size: 1.8rem;}  
+    .weather {
+        display: grid;
+        grid-template-columns: 2% 47%  2% 47% 2%;
+        grid-template-areas: 
+        '. cw . f .';
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        justify-content: center;
+        
+    }
     /*footer*/
     .base {display: none;}
     .medium {display: block;}
@@ -49,5 +60,6 @@
     .location, .medium {line-height: 1.5;}
     @media only screen and (min-width: 40em) {
         footer p {font-size: 1rem;}
+        .home-title { font-size: 2rem;}  
     }
 }    

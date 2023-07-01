@@ -157,6 +157,7 @@ nav ul li a {
 	min-width: 120px;
 	padding: 0.5em;
 	margin: 0.2em;
+  border-radius: 15px;
 	text-decoration: none;
 	transition: 0.5s;
 }
@@ -164,14 +165,20 @@ nav ul li a:hover {
   color: var(--nav-hover-link-color);
 	background-color: var(--nav-hover-background-color);
 	font-weight: bold;
+  border-radius: 15px;
 }
 .active { background-color: #2a8533;}
 nav {
   display: grid;
+  margin: auto 1rem;
   grid-template-columns: 20% 60% 20%;
-  grid-template-areas:'image nav-li social';
+  grid-template-rows: 80% 20%;
+  grid-template-areas:
+  'image nav-li social'
+  '. date .';
   align-items: center;
 }
+.date p {color: var(--paragraph-color-on-white);}
 .image {
   grid-area: image;
   background-color: var(--accent1-color);

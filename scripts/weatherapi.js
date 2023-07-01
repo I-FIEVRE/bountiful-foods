@@ -45,9 +45,9 @@ function  displayResults(weatherData) {
 }
 function  display(forcastData) {
   
-  temp1.innerHTML = `<strong>${forcastData.list[8].main.temp.toFixed(1)}</strong>`; // 3 hour forecast data: so 3 x 8 = 24 h
-  temp2.innerHTML = `<strong>${forcastData.list[16].main.temp.toFixed(1)}</strong>`;
-  temp3.innerHTML = `<strong>${forcastData.list[24].main.temp.toFixed(1)}</strong>`;
+  temp1.innerHTML = `<strong>${forcastData.list[8].main.temp.toFixed(0)}</strong>`; // 3 hour forecast data: so 3 x 8 = 24 h
+  temp2.innerHTML = `<strong>${forcastData.list[16].main.temp.toFixed(0)}</strong>`;
+  temp3.innerHTML = `<strong>${forcastData.list[24].main.temp.toFixed(0)}</strong>`;
  
   day1.innerHTML = `<strong>${new Date(forcastData.list[8].dt * 1000).toLocaleDateString('en', opti)}</strong>`; // tomorrow same time 
   day2.innerHTML = `<strong>${new Date(forcastData.list[16].dt * 1000).toLocaleDateString('en', opti)}</strong>`; // day after tomorrow same time 
