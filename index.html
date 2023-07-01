@@ -22,10 +22,10 @@
                 <li><a class="active" href="#">Home</a></li>
                 <li><a href="#">Fresh</a></li>
                 <li><a href="#">About Us</a></li>
-                <li><a href="#">Resource</a></li>
             </ul>
+            <button id="hamburgerBtn"><span>&#9776; Menu</span><span>X</span></button>
             <div class="social">
-                <h3>Social</h3>
+                <h3>Meet us on Social</h3>
                 <hr>
                 <div class="soci">
                     <a href="https://facebook.com" target="_blank"><img class="facebook" src="images/facebook-blue-48.png" alt="facebook icon"></a>
@@ -33,31 +33,30 @@
                     <a href="https://www.instagram.com/" target="_blank"><img class="instagram" src="images/instagram-48.png" alt="facebook icon"></a>
                 </div>
             </div>
-            <button id="hamburgerBtn"><span>&#9776; Menu</span><span>X</span></button>
+            <div class="date">
+                <p><span id="currentdate"></span></p>
+            </div> 
            <ul class="try" id="primaryNav">
                 <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="fresh.html">Fresh</a></li>
                 <li><a href="about-us.html">About Us</a></li>
-                <li><a href="resource.html">Resource</a></li>
             </ul>  
         </nav>            
-        <div class="date">
-            <p><span id="currentdate"></span></p>
-        </div>
+        
     </header>
     <main class="grid-home">
         <div class="hero">
             <div id="hero-box">
                 <picture class="hero-img">
-                    <source media="(max-width: 560px)" srcset="images/rivoli-550.jpg"> 
-                    <source media="(max-width: 1028px)" srcset="images/rivoli-1000-l.jpg">
-                    <source media="(max-width: 1800px)" srcset="images/rivoli-800-h.jpg"> 
-                    <img src="images/rivoli-1000-h.jpg" alt="Rivoli"> 
+                    <source media="(max-width: 560px)" srcset="#"> 
+                    <source media="(max-width: 1028px)" srcset="#">
+                    <source media="(max-width: 1800px)" srcset="#"> 
+                    <img src="#" alt="Rivoli"> 
                 </picture>
             </div>
             <h1 class="home-title">Welcome to Bountiful Foods&#33;</h1>
             <div class="button-box">
-                <a class="join" href="join.html">Join the Chamber</a>
+                <a class="join" href="join.html">Join Us</a>
             </div>    
         </div>
         <aside class="do">
@@ -67,44 +66,69 @@
         <aside class="event">
            
         </aside>
-        <aside class="weather">
-            <h2>Weather</h2>     
-            <figure>
-                <img src="#" alt=" " id="weather-icon" loading="lazy">
-                <figcaption></figcaption>
-            </figure>
-            <div>
-                <p><span id="temperature"></span>&#176;C</p>
-                <p>Wind Speed: <span id="wind-speed"></span>m&#47;s</p>
-                <p>Wind Chill: <span id="wind-chill"></span></p>
+        <div class="weather">
+            <div class="current-weather">
+                <h2>Carlsbad Current Weather</h2> 
+                <div class="today">
+                    <figure class="figure">
+                        <img src="#" alt=" " id="weather-icon" loading="lazy">
+                        <figcaption id="figc"></figcaption>
+                    </figure>
+                    <div class="results">
+                        <p><span id="temperature"></span> &#176;F</p>
+                        <p>Humidity: <span id="humidity"></span>&#37;</p>
+                    </div>
+                </div>    
             </div>
-            
-        </aside>
+            <div class="forecast">
+                <h2> 3&#45;Day Weather Forecast </h2>
+                <div class="days">
+                    <div class="1">
+                        <h3 id="day1">Tomorow</h3>
+                        <div>
+                            <p><span id="temperature1"></span> &#176;F</p>
+                        </div>
+                    </div>
+                    <div class="2">
+                        <h3 id="day2"></h3>
+                        <div>
+                            <p><span id="temperature2"></span> &#176;F</p>
+                        </div>   
+                    </div>
+                     <div class="3">
+                        <h3 id="day3"></h3>
+                        <div>
+                            <p><span id="temperature3"></span> &#176;F</p>
+                        </div>
+                     </div>
+                </div>       
+            </div>       
+        </div>
        
     </main>
     <footer>
+        <hr class="foot">
         <div class="grid-footer">
             <div class="logo-footer">
                 <span><a href="index.html"><img class="logo" src="images/logo2.webp" alt="Website logo"></a></span>
                 <section class="address">
                     <h2>Bountiful Foods</h2>
-                    <p class="lf">Via Carlo Ferrero, 29<br>10098 Rivoli (TO), Italy</p>
+                    <p class="lf">6446 Merlin Dr<br> Carlsbad, CA 92011, USA</p>
                 </section>
             </div>
             <div class="location">
-                <p class="l"><a href="mailto:#?subject=Info">protocollo.generale@ri.legalmail.camcom.it</a><br>+(39) 011 5714900</p>
-                <p ><a href="https://www.google.it/maps/place/Via+Ferrero,+29,+10098+Rivoli+TO/@45.0623577,7.5567061,17z/data=!3m1!4b1!4m6!3m5!1s0x47886adbdbfc81db:0x40712ca7642018e1!8m2!3d45.0623577!4d7.5567061!16s%2Fg%2F11cs8zj99d" target="_blank">&#9872; Location Map</a></p>
+                <p class="l"><a href="mailto:#?subject=Info">contact@bf.com</a><br>+1 858 000 0000</p>
+                <p ><a href="https://www.google.com/maps/place/6446+Merlin+Dr,+Carlsbad,+CA+92011,+%C3%89tats-Unis/@33.1184203,-117.3093582,17z/data=!3m1!4b1!4m6!3m5!1s0x80dc73227630ab2f:0x87dd20d19eec8fec!8m2!3d33.1184158!4d-117.3067833!16s%2Fg%2F11c2ggfzj6?entry=ttu" target="_blank">&#127796; Location Map &#127796;</a></p>
             </div>
         </div>
         <hr class="foot">
         <br>
         <p class="base">&#169; <span id="currentyear"></span> Bountiful Foods<br>Isabelle Fi&#232;vre <br> WDD 230 Final Project <br> Last Update on <span id="lastUpdated"></span></p>
         <p class="medium">&#169; <span id="currentyear-1"></span> Bountiful Foods &#124; Isabelle Fi&#232;vre &#124; WDD 230 Final Project &#124; Last Update on <span id="lastUpdated-1"></span></p> 
-       
+        <a href="#">Resource</a>
     </footer>
     <script src="scripts/main.js"></script>
     <script src="scripts/header.js"></script>
     <script src="scripts/weatherapi.js"></script>
-    <script src="scripts/windchill.js"></script>
 </body>
 </html>

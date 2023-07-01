@@ -2,4 +2,52 @@
     header, nav, main, section, footer {
         max-width: 1175px;
     }
+    nav button { display: none; }
+    #primaryNav1 { display: grid;}
+    #primaryNav { display:none;}
+    .bountiful-nav {
+        display: grid;
+        margin: auto 1rem;
+        grid-template-columns: 20% 10% 65% 5%;
+        grid-template-rows: 80% 20%;
+        grid-template-areas:
+        'image nav-li nav-li .'
+        'social . date .';
+        align-items: center;
+    }
+    .image { grid-area: image;}
+    .nav-li {grid-area: nav-li;}
+    .bountiful-nav ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.4rem;
+    }
+    .bountiful-nav ul li a { 
+        padding: 0.5em;
+        font-size: 1.2rem;
+        border-radius: 15px;
+    }
+    .social { 
+        grid-area: social;
+       /* margin-top: 1.5rem;*/
+    }
+    .date {
+        grid-area: date;
+        text-align: end;
+    }
+
+    /*footer*/
+    .base {display: none;}
+    .medium {display: block;}
+    footer p {font-size: 0.8rem;}
+    .grid-footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    footer hr {margin-bottom: 0.5rem;}
+    .location, .medium {line-height: 1.5;}
+    @media only screen and (min-width: 40em) {
+        footer p {font-size: 1rem;}
+    }
 }    
