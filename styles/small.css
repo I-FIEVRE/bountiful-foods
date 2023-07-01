@@ -173,10 +173,10 @@ main h3 {
 
 .weather {
 	display: grid;
-	grid-template-columns: 15% 35% 35% 15%;
+	grid-template-columns: 20% 25%  10% 25% 20%;
 	grid-template-areas: 
-	'. cw f .';
-	column-gap: 2rem;
+	'. cw . f .';
+	
 	text-align: center;
 	justify-content: center;
 	
@@ -188,6 +188,9 @@ main h3 {
 	text-align: center;
 	justify-content: center;
 	border: 2px solid var(--secondary-color);
+	border-radius: 15px;
+	box-shadow: var(--primary-color) 0px 2px 5px -1px, var(--accent2-color) 0px 1px 3px -1px;
+	padding: 0.5rem;
 }
 .current-weather h2 {
 	text-align: center;
@@ -209,12 +212,14 @@ figure {line-height: 1;}
 	text-align: center;
 	justify-content: center;
 	border: 2px solid var(--secondary-color);
+	border-radius: 15px;
+	box-shadow: var(--primary-color) 0px 2px 5px -1px, var(--accent2-color) 0px 1px 3px -1px;
 }
 .forecast h2 {text-align: center;}
 .days {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	column-gap: 0.5rem;
+	gap: 1rem;
 	padding-top: 0.3rem;
 	margin: 0.1rem auto;
 }
