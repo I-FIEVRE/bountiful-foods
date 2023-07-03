@@ -165,6 +165,70 @@ hr {
 	font-size: 1.6rem;
 	text-align: center;
 }  
+
+.container {
+	position: relative;
+}  
+.mySlides {
+    display: none;
+  }
+.mySlides img {
+    display: block;
+    margin:auto;
+    width: 50%;
+  }
+.prev, .prev-1,
+.next {
+	cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    text-decoration: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev-1 {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover, .prev-1:hover {
+    background-color: var(--paragraph-background-color);
+    color: var(--accent1-color);
+}
+.caption-container {
+    text-align: center;
+    background-color: var(--paragraph-background-color);
+    padding: 3rem auto;
+    color: var(--accent1-color);
+}
+ .row1:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.column1 {
+    float: left;
+    width: 10%;
+}
+.min {
+    opacity: 0.6;
+	cursor: pointer;
+}  
+.active, .min:hover {
+    opacity: 1;
+}
+
 main h1 {
     margin-top: 2rem;
     font-size: 1.3rem;

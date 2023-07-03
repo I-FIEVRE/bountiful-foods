@@ -45,19 +45,78 @@
         
     </header>
     <main class="grid-home">
-        <div class="hero">
-            <div id="hero-box">
-                <picture class="hero-img">
-                    <source media="(max-width: 560px)" srcset="#"> 
-                    <source media="(max-width: 1028px)" srcset="#">
-                    <source media="(max-width: 1800px)" srcset="#"> 
-                    <img src="#" alt="#"> 
-                </picture>
+        <br>
+        <div class="container">
+
+            <!-- Full-width images with number text -->
+
+            <div class="mySlides">
+              <img src="images/pexels-jane-doan-1132047.jpg">
+            </div>               
+            <div class="mySlides">
+              <img src="images/pexels-denys-gromov-5668206.jpg">
+            </div>          
+            <div class="mySlides">
+              <img src="images/pexels-denys-gromov-5668258.jpg">
+            </div>          
+            <div class="mySlides">
+              <img src="images/pexels-jill-wellington-39351.jpg">
+            </div>         
+            <div class="mySlides">
+              <img src="images/pexels-ryan-baker-129574.jpg">
             </div>
-            <h1 class="home-title">Rejoice, our Food is Organic, Healthy, and Teasty &#33;</h1>
-            <div class="button-box">
-                <a class="join" href="join.html">Join Us</a>
-            </div>    
+            <div class="mySlides">
+              <img src="images/pexels-wendy-wei-1656663.jpg">
+            </div>
+            <div class="mySlides">
+              <img src="images/pexels-lisa-fotios-1152237.jpg">
+            </div>
+            <div class="mySlides">
+              <img src="images/pexels-lisa-fotios-1351238.jpg">
+            </div>
+            <div class="mySlides">
+              <img src="images/pexels-shameel-mukkath-14930536.jpg">
+            </div>
+            <div class="mySlides"><img src="images/pexels-ylanite-koppens-2479242.jpg">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+            <div class="row1">
+              <div class="column1">
+                <img class="min" src="images/pexels-jane-doan-1132047-150.jpg" style="width:100%" onclick="currentSlide(1)" alt="Our Organic Fruits">
+              </div>
+              <div class="column1">
+                <img class="min" src="images/pexels-denys-gromov-5668206-150.jpg" style="width:100%" onclick="currentSlide(2)" alt="Our Organic Fruit Water">
+              </div>
+              <div class="column1">
+                <img class="min" src="images/pexels-denys-gromov-5668258-150.jpg" style="width:100%" onclick="currentSlide(3)" alt="Our Oganics Fruit Water">
+              </div>
+              <div class="column1">
+                <img class="min" src="images/pexels-jill-wellington-39351-150.jpg" style="width:100%" onclick="currentSlide(4)" alt="Grape directly from California Farmers">
+              </div>
+              <div class="column1">
+                <img class="min" src="images/pexels-ryan-baker-129574-150.jpg" style="width:100%" onclick="currentSlide(5)" alt="Citrus directly from California Farmers">
+              </div>
+              <div class="column1">
+                <img class="min" src="images/pexels-wendy-wei-1656663-150.jpg" style="width:100%" onclick="currentSlide(6)" alt="Vegetables directly from California Farmers">
+              </div>
+              <div class="column1">
+                <img class="min" src="images/pexels-lisa-fotios-1152237-150.jpg" style="width:100%" onclick="currentSlide(7)" alt="Our italian Salad for the Italian Month">
+              </div>
+              <div class="column1">
+                <img class="min" src="images/pexels-lisa-fotios-1351238-150.jpg" style="width:100%" onclick="currentSlide(8)" alt="Our italian Bruschette for the Italian Month">
+              </div>
+              <div class="column1">
+                <img class="min" src="images/pexels-shameel-mukkath-14930536-150.jpg" style="width:100%" onclick="currentSlide(9)" alt="Our Organic Juice">
+              </div> 
+              <div class="column1">
+                <img class="min" src="images/pexels-ylanite-koppens-2479242-150.jpg" style="width:100%" onclick="currentSlide(10)" alt="Our Organic Juice">
+              </div> 
+            </div>
+        </div>
         </div>
         <aside class="do">
             <p>Do your fresh juice&#33;</p>
@@ -129,6 +188,7 @@
     </footer>
     <script src="scripts/main.js"></script>
     <script src="scripts/header.js"></script>
+    <script src="scripts/slide.js"></script>
     <script src="scripts/weatherapi.js"></script>
 </body>
 </html>
