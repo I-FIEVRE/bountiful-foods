@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh &#124; Bountiful Foods</title>
+    <meta name="author" content="Isabelle FIEVRE">
+    <meta name="description" content="Bountiful Foods Fresh page by Isabelle FIEVRE for wdd230 final project">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">   
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>  
+    <header> 
+        <nav class="bountiful-nav">
+            <a class="image" href="index.html"><img id="logo" src="images/logo2.jpg" alt="Website logo"></a>
+            <ul class="nav-li" id="primaryNav1">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fresh.html">Fresh</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+            </ul>
+            <button id="hamburgerBtn"><span>&#9776; Menu</span><span>X</span></button>
+            <div class="social">
+                <h3>Meet us on Social</h3>
+                <hr>
+                <div class="soci">
+                    <a href="https://facebook.com" target="_blank"><img class="facebook" src="images/facebook-blue-48.png" alt="facebook icon"></a>
+                    <a href="https://www.linkedin.com" target="_blank"><img class="linkedin" src="images/in-blue-48.png" alt="linkedin icon"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img class="instagram" src="images/instagram-48.png" alt="facebook icon"></a>
+                </div>
+            </div>
+            <div class="date">
+                <p><span id="currentdate"></span></p>
+            </div> 
+           <ul class="try" id="primaryNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fresh.html">Fresh</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+            </ul>  
+        </nav>            
+        
+    </header>
+    <main class="grid-fresh">
+       
+    </main>
+    <footer>
+        <hr class="foot">
+        <div class="grid-footer">
+            <div class="logo-footer">
+                <span><a href="index.html"><img class="logo" src="images/logo2.webp" alt="Website logo"></a></span>
+                <section class="address">
+                    <h2>Bountiful Foods</h2>
+                    <p class="lf">6446 Merlin Dr<br> Carlsbad, CA 92011, USA</p>
+                </section>
+            </div>
+            <div class="location">
+                <p class="l"><a href="mailto:#?subject=Info">contact@bf.com</a><br>+1 858 000 0000</p>
+                <p ><a href="https://www.google.com/maps/place/6446+Merlin+Dr,+Carlsbad,+CA+92011,+%C3%89tats-Unis/@33.1184203,-117.3093582,17z/data=!3m1!4b1!4m6!3m5!1s0x80dc73227630ab2f:0x87dd20d19eec8fec!8m2!3d33.1184158!4d-117.3067833!16s%2Fg%2F11c2ggfzj6?entry=ttu" target="_blank">&#127796; Location Map &#127796;</a></p>
+            </div>
+        </div>
+        <hr class="foot">
+        <br>
+        <p class="base">&#169; <span id="currentyear"></span> Bountiful Foods<br>Isabelle Fi&#232;vre <br> WDD 230 Final Project <br> Last Update on <span id="lastUpdated"></span></p>
+        <p class="medium">&#169; <span id="currentyear-1"></span> Bountiful Foods &#124; Isabelle Fi&#232;vre &#124; WDD 230 Final Project &#124; Last Update on <span id="lastUpdated-1"></span></p> 
+        <a href="#">Resource</a>
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/header.js"></script>
+    <script src="scripts/slide.js"></script>
+    <script src="scripts/weatherapi.js"></script>
+</body>
+</html>
