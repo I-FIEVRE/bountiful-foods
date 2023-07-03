@@ -152,9 +152,7 @@ h1, h2, h3 {
 	font-family: var(--heading-font);
 	color: var(--headline-color-on-white);
 }
-h2 {
-	text-align: center;
-}
+h2 { text-align: center;}
 hr {
 	height: 3px;
 	margin: 0;
@@ -165,20 +163,14 @@ hr {
 	font-size: 1.6rem;
 	text-align: center;
 }  
-
-.container {
-	position: relative;
-}  
-.mySlides {
-    display: none;
-  }
+.container { position: relative;}  
+.mySlides { display: none;}
 .mySlides img {
     display: block;
     margin:auto;
     width: 50%;
   }
-.prev, .prev-1,
-.next {
+.prev, .next {
 	cursor: pointer;
     position: absolute;
     top: 40%;
@@ -188,31 +180,19 @@ hr {
     color: var(--primary-color);
     font-weight: bold;
     font-size: 20px;
-    border-radius: 0 3px 3px 0;
+    border-radius: 5px;
     user-select: none;
     -webkit-user-select: none;
     text-decoration: none;
 }
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-.prev-1 {
-    left: 0;
-    border-radius: 3px 0 0 3px;
-}
-.prev:hover,
-.next:hover, .prev-1:hover {
+.prev { left: 1rem;	}
+.next { right: 1rem;}
+.prev:hover, .next:hover, .prev-1:hover, .caption-container {
     background-color: var(--paragraph-background-color);
     color: var(--accent1-color);
 }
-.caption-container {
-    text-align: center;
-    background-color: var(--paragraph-background-color);
-    padding: 3rem auto;
-    color: var(--accent1-color);
-}
- .row1:after {
+.caption-container { text-align: center;}
+.row1:after {
     content: "";
     display: table;
     clear: both;

@@ -36,17 +36,23 @@
         text-align: end;
     }
     .home-title { font-size: 1.8rem;}  
+    .prev { left: 2rem;	}
+    .next { right: 2rem;}
+    .caption-container p { font-size: 1.6rem;}
     .weather {
         display: grid;
-        grid-template-columns: 2% 47%  2% 47% 2%;
+        grid-template-columns: 1% 49%  1% 49% 1%;
         grid-template-areas: 
         '. cw . f .';
         margin: 0;
         padding: 0;
         text-align: center;
-        justify-content: center;
-        
+        justify-content: center;    
     }
+    .current-weather { margin: 1rem;}
+    .today { column-gap: 0.2rem;}
+    .days { column-gap: 0.5rem;}
+
     /*footer*/
     .base {display: none;}
     .medium {display: block;}
@@ -60,6 +66,8 @@
     .location, .medium {line-height: 1.5;}
     @media only screen and (min-width: 40em) {
         footer p {font-size: 1rem;}
-        .home-title { font-size: 2rem;}  
+        .home-title { font-size: 2rem;} 
+        .current-weather { margin: 1rem 2rem;}
+        .today, .days { column-gap: 1rem;}   
     }
 }    

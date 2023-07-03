@@ -3,9 +3,6 @@
         max-width: 1800px;
     }
     header {margin-top: 1rem;}
-    /*nav button { display: none; }
-    #primaryNav1 { display: grid;}
-    #primaryNav { display:none;}*/
     .bountiful-nav {
         display: grid;
         margin: auto 1rem;
@@ -16,19 +13,11 @@
         '. date .';
         align-items: center;
     }
-    /*.image { grid-area: image;}
-    .nav-li {grid-area: nav-li;}
-    .bountiful-nav ul {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 0.4rem;
-    }*/
     #logo {
         border-radius: 50%;
         max-width: 180px;   
     }
     #logo:hover { max-width: 190px;}
-    
     .bountiful-nav ul li a { font-size: 1.8rem;}
     .social { grid-area: social;}
     .date {
@@ -63,8 +52,11 @@
         height: 2px;
         margin: 1rem;
       }
-    .home-title { font-size: 2.2rem;} 
-    .weather { grid-template-columns: 15% 30%  10% 30% 15%;}  
+    .home-title { font-size: 2.2rem;}
+    .prev { left: 4rem;	}
+    .next { right: 4rem;}
+    .caption-container p {font-size: 2rem;} 
+    .weather { grid-template-columns: 15% 30%  10% 30% 15%;}
     footer p {
         font-size: 1rem;
     }
