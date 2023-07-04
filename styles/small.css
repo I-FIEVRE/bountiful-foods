@@ -15,10 +15,10 @@
   --paragraph-color-on-white: #2a8533; /* paragraph text on a white background */ 
   --paragraph-color-on-color: #ffffff; /* paragraph text on a colored background */ 
   --paragraph-background-color: #2a8533  ;
-  --nav-link-color: #000000;
-  --nav-background-color: #74bc2c;
-  --nav-hover-link-color: #ffffff;
-  --nav-hover-background-color: #2a8533;
+  --nav-link-color: #ffffff;
+  --nav-background-color: #2a8533;
+  --nav-hover-link-color: #000000;
+  --nav-hover-background-color: #74b02c;
 }
 h1, h2, h3 {
 	font-family: var(--heading-font);
@@ -111,13 +111,9 @@ nav {
 	text-decoration: none;
 	transition: 0.5s;
 }
-.bountiful-nav ul li a:hover {
+.bountiful-nav ul li a:hover, .bountiful-nav ul li a.active {
   	color: var(--nav-hover-link-color);
 	background-color: var(--nav-hover-background-color);
-}
-.bountiful-nav ul li a.active { 
-	color: var(--accent1-color);
-	background-color: var(--primary-color);
 }
 nav ul {display: none;}
 nav ul.open {display: block;}
