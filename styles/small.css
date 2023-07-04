@@ -17,8 +17,8 @@
   --paragraph-background-color: #2a8533  ;
   --nav-link-color: #ffffff;
   --nav-background-color: #2a8533;
-  --nav-hover-link-color: #000000;
-  --nav-hover-background-color: #74b02c;
+  --nav-hover-link-color: #2a8533;
+  --nav-hover-background-color: #ffffff;
 }
 h1, h2, h3 {
 	font-family: var(--heading-font);
@@ -114,6 +114,7 @@ nav {
 .bountiful-nav ul li a:hover, .bountiful-nav ul li a.active {
   	color: var(--nav-hover-link-color);
 	background-color: var(--nav-hover-background-color);
+	border: 2px solid var(--primary-color);
 }
 nav ul {display: none;}
 nav ul.open {display: block;}
@@ -222,8 +223,7 @@ main h3 {
 	display:block;
 	margin: 1rem auto;
 }
-.current-weather {
-	grid-area: cw;
+.current-weather, .forecast, .fresh {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
@@ -231,6 +231,9 @@ main h3 {
 	border: 2px solid var(--secondary-color);
 	border-radius: 15px;
 	box-shadow: var(--primary-color) 0px 2px 5px -1px, var(--accent2-color) 0px 1px 3px -1px;
+}
+.current-weather {
+	grid-area: cw;
 	padding: 0.5rem;
 	margin: 1rem;
 }
@@ -248,13 +251,6 @@ main h3 {
 figure {line-height: 1;}
 .forecast {
 	grid-area: f;
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	justify-content: center;
-	border: 2px solid var(--secondary-color);
-	border-radius: 15px;
-	box-shadow: var(--primary-color) 0px 2px 5px -1px, var(--accent2-color) 0px 1px 3px -1px;
 	margin: 1rem;
 	padding: 1rem;
 }
@@ -267,6 +263,14 @@ figure {line-height: 1;}
 }
 .days h3 {font-size: 0.9rem;}
 .results p {padding: 0.5rem;}
+.fresh {margin: 2rem 10rem;}
+.fresh img {
+	display: block;
+	border-radius: 15px;
+	margin: 1rem auto;
+	max-width: 50%;
+}
+
 /* footer */
 footer {
 	text-align: center;
