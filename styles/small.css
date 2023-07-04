@@ -147,7 +147,8 @@ nav button {
     background-color: transparent;
     border: none;
     font-size: 2rem;
-    color: var(--nav-hover-background-color);
+    color: var(--nav-background-color);
+
 	font-weight: bold; 
 }
 nav button span:nth-child(2) {
