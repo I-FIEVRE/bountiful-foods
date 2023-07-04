@@ -56,7 +56,28 @@
     .prev { left: 4rem;	}
     .next { right: 4rem;}
     .caption-container p {font-size: 2rem;} 
-    .weather { grid-template-columns: 15% 30%  10% 30% 15%;}
+    .home {
+        display: grid;
+        grid-template-columns: 5% 30% 60% 5%;
+        grid-template-rows: 50% 25% 25%;
+        grid-template-areas: 
+        '. fresh info .'
+        '. weather info .'
+        '. weather info .';
+    }
+    .fresh {grid-area: fresh;}
+    .info { 
+        grid-area: info;
+        width: 600px;
+        margin: 2rem auto;
+        height: 600px;
+    }
+   .weather {
+    grid-area: weather;
+    display:block;
+	margin: 1rem auto;
+}
+    /*.weather { grid-template-columns: 15% 30%  10% 30% 15%;}*/
     footer p {
         font-size: 1rem;
     }

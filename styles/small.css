@@ -20,16 +20,24 @@
   --nav-hover-link-color: #2a8533;
   --nav-hover-background-color: #ffffff;
 }
-h1, h2, h3 {
-	font-family: var(--heading-font);
-	color: var(--headline-color-on-white);
-}
-p { font-family: var(--paragraph-font);}
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
+h1, h2, h3 {
+	font-family: var(--heading-font);
+	color: var(--headline-color-on-white);
+}
+p { font-family: var(--paragraph-font);}
+::-webkit-scrollbar { width: 10px;}
+::-webkit-scrollbar-track { border-radius: 10px;}
+::-webkit-scrollbar-thumb {
+	background: var(--secondary-color);
+	border-radius:10px;
+}
+
 body {
 	margin:auto;
     font-size: 16px;
@@ -111,7 +119,7 @@ nav {
 	text-decoration: none;
 	transition: 0.5s;
 }
-.bountiful-nav ul li a:hover, .bountiful-nav ul li a.active {
+.bountiful-nav ul li a:hover, .bountiful-nav ul li a.active, .join-fresh:hover {
   	color: var(--nav-hover-link-color);
 	background-color: var(--nav-hover-background-color);
 	border: 2px solid var(--primary-color);
@@ -153,7 +161,7 @@ nav button span:nth-child(2) {
 	font-size: 1.2rem;
 }
 
-h2 { text-align: center;}
+h2, h3 { text-align: center;}
 hr {
 	height: 3px;
 	margin: 0;
@@ -218,7 +226,39 @@ main h2 {
 main h3 {
     font-size: 1rem;  
 }
-
+.info { 
+	width: 300px;
+	margin: 1rem auto;
+	height: 250px;
+	overflow-y: scroll;
+	border: 2px solid var(--secondary-color);
+	border-radius: 10px;
+	box-shadow: var(--primary-color) 0px 2px 5px -1px, var(--accent2-color) 0px 1px 3px -1px;
+}
+.info p {text-align: center;}
+.fresh {
+	margin: 2rem auto;
+	width: 300px;
+	height: auto;
+}
+.fresh img, .info img {
+	display: block;
+	border-radius: 15px;
+	margin: 1rem auto;
+	max-width: 50%;
+	height: auto;
+	box-shadow: 5px 5px 3px rgba(86, 85, 85, 0.819);
+}
+.join-fresh {
+	color: var(--nav-link-color);
+	background-color: var(--nav-background-color);
+	font-family: var(--heading-font);
+	border-radius: 10px;
+	text-decoration: none;
+	padding: 1rem;
+	margin: 1rem auto;
+	font-weight: bold;
+} 
 .weather {
 	display:block;
 	margin: 1rem auto;
@@ -229,8 +269,8 @@ main h3 {
 	text-align: center;
 	justify-content: center;
 	border: 2px solid var(--secondary-color);
-	border-radius: 15px;
 	box-shadow: var(--primary-color) 0px 2px 5px -1px, var(--accent2-color) 0px 1px 3px -1px;
+	border-radius: 10px;
 }
 .current-weather {
 	grid-area: cw;
@@ -263,13 +303,6 @@ figure {line-height: 1;}
 }
 .days h3 {font-size: 0.9rem;}
 .results p {padding: 0.5rem;}
-.fresh {margin: 2rem 10rem;}
-.fresh img {
-	display: block;
-	border-radius: 15px;
-	margin: 1rem auto;
-	max-width: 50%;
-}
 
 /* footer */
 footer {
