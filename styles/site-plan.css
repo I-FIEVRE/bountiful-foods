@@ -1,6 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica&family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@400;700&display=swap');
 :root {
 
   --primary-color: #2a8533;
@@ -12,7 +11,7 @@
   --accent1-color: #ffffff;
   --accent2-color: #000000;
 
-  --heading-font: "IM Fell Double Pica", 'Times New Roman', serif;
+  --heading-font: "Rubik", Arial, sans-serif;
   --paragraph-font: "Roboto", Helvetica, sans-serif;
 
   --headline-color-on-white: #2a8533;  /* headlines on a white background */ 
@@ -63,7 +62,7 @@ header > h1, header > h2, header > h3 {
 p {
   font-family: var(--paragraph-font);
   color: var(--paragraph-color);
-  padding: 1em;
+  padding: 0.5em;
 }
 .colors {
   width: 100%;
@@ -164,7 +163,7 @@ p.colored {
 }
 .persona{
   display: grid;
-  grid-template-columns: 5% 42.5% 5% 42.5% 5%;	
+  grid-template-columns: 2% 47% 2% 47% 2%;	
 }
 main article p {
   margin-left: 5%;
