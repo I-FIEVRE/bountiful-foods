@@ -55,7 +55,8 @@
     .home-title { font-size: 2.2rem;}
     .prev { left: 4rem;	}
     .next { right: 4rem;}
-    .caption-container p {font-size: 2rem;} 
+    .caption-container p {font-size: 2rem;}
+    .mySlides img { width: 50%;} 
     .home {
         display: grid;
         grid-template-columns: 5% 30% 60% 5%;
@@ -69,7 +70,6 @@
     .info { 
         grid-area: info;
         width: 600px;
-        margin: 2rem auto;
         height: 600px;
     }
    .weather {

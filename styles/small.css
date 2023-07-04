@@ -178,7 +178,7 @@ hr {
 .mySlides img {
     display: block;
     margin:auto;
-    width: 50%;
+    width: 70%;
   }
 .prev, .next {
 	cursor: pointer;
@@ -193,8 +193,8 @@ hr {
     border-radius: 5px;
     text-decoration: none;
 }
-.prev { left: 1rem;	}
-.next { right: 1rem;}
+.prev { left: 0.5rem;}
+.next { right: 0.5rem;}
 .prev:hover, .next:hover, .prev-1:hover, .caption-container {
     background-color: var(--paragraph-background-color);
     color: var(--accent1-color);
@@ -230,13 +230,16 @@ main h3 {
 .info { 
 	width: 300px;
 	margin: 1rem auto;
+	padding: 0 0.5rem;
 	height: 250px;
 	overflow-y: scroll;
-	border: 2px solid var(--secondary-color);
+	border: 2px inset var(--secondary-color);
+	/*border: 2px solid var(--secondary-color);*/
 	border-radius: 10px;
 	box-shadow: var(--primary-color) 0px 2px 5px -1px, var(--accent2-color) 0px 1px 3px -1px;
 }
 .info p {text-align: center;}
+.choice {display: none;}
 .fresh {
 	margin: 2rem auto;
 	width: 300px;
@@ -269,7 +272,8 @@ main h3 {
 	flex-direction: column;
 	text-align: center;
 	justify-content: center;
-	border: 2px solid var(--secondary-color);
+	border: 2px inset var(--secondary-color);
+	/*border: 2px solid var(--secondary-color);*/
 	box-shadow: var(--primary-color) 0px 2px 5px -1px, var(--accent2-color) 0px 1px 3px -1px;
 	border-radius: 10px;
 }
