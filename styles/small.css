@@ -109,6 +109,7 @@ nav {
 	padding: 0.2em;
 	margin: 0.2em;
 	text-decoration: none;
+	text-shadow: 0 0 3px var(--accent2-color), 0 0 5px var(--nav-hover-background-color);
 	transition: 0.5s;
 }
 .bountiful-nav ul li a:hover {
