@@ -41,11 +41,12 @@
     .caption-container p { font-size: 1.6rem;}
     .info { 
         grid-area: info;
-        width: 550px;
+        width: 500px;
         margin: 2rem auto;
         padding: 0 1rem;
         height: 300px;
     }
+    .info img:hover{ transform: scale(1.5);}
     .choice {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;

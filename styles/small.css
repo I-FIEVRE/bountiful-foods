@@ -239,6 +239,11 @@ main h3 {
 	box-shadow: var(--primary-color) 0px 2px 5px -1px, var(--accent2-color) 0px 1px 3px -1px;
 }
 .info p {text-align: center;}
+.info a {
+	color: var(--accent2-color);
+	font-weight: bold;
+	margin: 0.5rem auto;
+}
 .choice {display: none;}
 .fresh {
 	margin: 2rem auto;
@@ -308,6 +313,7 @@ figure {line-height: 1;}
 }
 .days h3 {font-size: 0.9rem;}
 .results p {padding: 0.5rem;}
+.resource p {padding: 1rem 2rem;}
 
 /* footer */
 footer {
