@@ -247,6 +247,7 @@ main h3 {
 .choice {display: none;}
 .fresh {
 	margin: 2rem auto;
+	padding-top: 1rem;
 	width: 300px;
 	height: auto;
 }
@@ -264,10 +265,11 @@ main h3 {
 	font-family: var(--heading-font);
 	border-radius: 10px;
 	text-decoration: none;
-	padding: 1rem;
-	margin: 1rem auto;
+	padding: 0.5rem 1rem;
+	margin: 0 auto;
 	font-weight: bold;
 } 
+.fresh  p {margin: 1rem 0;}
 .weather {
 	display:block;
 	margin: 1rem auto;
