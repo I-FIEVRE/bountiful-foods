@@ -79,7 +79,7 @@
     footer p {font-size: 0.8rem;}
     .grid-footer {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1.5fr;
         align-items: center;
     }
     footer hr {margin-bottom: 0.5rem;}
@@ -93,5 +93,12 @@
         .mySlides img { width: 60%;}
         .prev { left: 2.5rem;	}
         .next { right: 2.5rem;}
+    }
+    @media only screen and (max-width: 780px) {
+        .grid-footer {
+            display: grid;
+            grid-template-columns: 1fr 1.8fr;
+        }
+        footer h3 {font-size: 1rem;}
     }
 }    

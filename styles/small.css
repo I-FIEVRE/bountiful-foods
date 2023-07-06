@@ -328,7 +328,9 @@ footer img {max-width: 100px;
 height: auto;}
 footer a {color: var(--accent2-color);}
 footer hr {margin-top: 0.5rem;}
-.base {
-	display: block;
-}
+.base { display: block;}
 .medium {display: none;}
+
+@media only screen and (max-width: 450px) {
+	footer h3 {font-size: 0.9rem;}
+}
