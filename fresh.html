@@ -44,9 +44,28 @@
         
     </header>
     <main class="grid-fresh">
-     
+        <div>
+            <h1>Build your own Speciality Drink</h1>
+            <form method="get" action="thankyou.html">
+                <div class="f-grid">
+                    <fieldset class="f1">
+                        <legend>Information</legend>
+                        <label class="info">First Name <input type="text" name="fname" required></label>
+                        <label class="info">Last Name <input type="text" name="lname" required></label>
+                        <label class="info">Phone <input type="tel" name="phone" ></label>
+                        <select name="fruit" id="fruit-select">
+                            <option value="">-- Please choose a fruit --</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                        <label class="info">Special Instructons <textarea name="description"></textarea></label>
+                    </fieldset>
+                    <p><span class="speciality"></span></p>
+                </div>
+                <input type="submit" value="Build my Drink" class="subBtn">
+            </form>    
+        </div>
         
-        <p><span class="speciality"></span></p>
     </main>
     <footer>
         <hr class="foot">
@@ -61,6 +80,7 @@
             <div class="location">
                 <p class="l"><a href="mailto:#?subject=Info">contact@bf.com</a><br>+1 858 000 0000</p>
                 <p ><a href="https://www.google.com/maps/place/6446+Merlin+Dr,+Carlsbad,+CA+92011,+%C3%89tats-Unis/@33.1184203,-117.3093582,17z/data=!3m1!4b1!4m6!3m5!1s0x80dc73227630ab2f:0x87dd20d19eec8fec!8m2!3d33.1184158!4d-117.3067833!16s%2Fg%2F11c2ggfzj6?entry=ttu" target="_blank">&#127796; Carlsbad Location Map &#127796;</a></p>
+                <h3>We work with California Organic Farmers</h3>
             </div>
         </div>
         <hr class="foot">
