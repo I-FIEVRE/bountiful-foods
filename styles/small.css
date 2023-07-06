@@ -35,8 +35,8 @@ p { font-family: var(--paragraph-font);}
 ::-webkit-scrollbar { width: 10px;}
 ::-webkit-scrollbar-track { border-radius: 10px;}
 ::-webkit-scrollbar-thumb {
-	background: var(--month-color);
-	/*background: var(--secondary-color);*/
+	/*background: var(--month-color);*/
+	background: var(--secondary-color);
 	border-radius:10px;
 }
 
@@ -121,13 +121,18 @@ nav {
 	text-decoration: none;
 	transition: 0.5s;
 }
-.bountiful-nav ul li a:hover, .bountiful-nav ul li a.active, .join-fresh:hover {
+.bountiful-nav ul li a:hover, .bountiful-nav ul li a.active {
   	/*color: var(--nav-hover-link-color);
 	background-color: var(--nav-hover-background-color);
 	border: 2px solid var(--primary-color);*/
 	color: var(--primary-color);
 	background-color: var(--accent1-color);
 	border: 3px solid var(--month-color);
+}
+.join-fresh:hover {
+	color: var(--nav-hover-link-color);
+  	background-color: var(--nav-hover-background-color);
+  	border: 2px solid var(--primary-color);
 }
 nav ul {display: none;}
 nav ul.open {display: block;}
@@ -238,8 +243,8 @@ main h3 {
 	padding: 0 0.5rem;
 	height: 250px;
 	overflow-y: scroll;
-	border: 3px solid var(--month-color);
-	/*border: 2px inset var(--secondary-color);*/
+	/*border: 3px solid var(--month-color);*/
+	border: 3px inset var(--secondary-color);
 	border-radius: 10px;
 	box-shadow: var(--primary-color) 0px 2px 5px -1px, var(--accent2-color) 0px 1px 3px -1px;
 }
@@ -249,7 +254,7 @@ main h3 {
 	font-weight: bold;
 	margin: 0.5rem auto;
 }
-.info h3 {color: var(--month-color)}
+.info h2 + h3, .info-img p:first-child b:nth-child(n) {color: var(--month-color)}
 .choice {display: none;}
 .fresh {
 	margin: 2rem auto;
@@ -285,7 +290,7 @@ main h3 {
 	flex-direction: column;
 	text-align: center;
 	justify-content: center;
-	border: 2px inset var(--secondary-color);
+	border: 3px inset var(--secondary-color);
 	/*border: 2px solid var(--secondary-color);*/
 	box-shadow: var(--primary-color) 0px 2px 5px -1px, var(--accent2-color) 0px 1px 3px -1px;
 	border-radius: 10px;
@@ -336,7 +341,6 @@ footer a {color: var(--accent2-color);}
 footer hr {margin-top: 0.5rem;}
 .base { display: block;}
 .medium {display: none;}
-
 @media only screen and (max-width: 450px) {
 	footer h3 {font-size: 0.9rem;}
 }
