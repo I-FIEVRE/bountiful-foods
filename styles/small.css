@@ -3,6 +3,7 @@
 
   --primary-color: #2a8533;
   --secondary-color: #74bc2c;
+  --month-color: #b31312;
   --accent1-color: #ffffff;
   --accent2-color: #000000;
 
@@ -34,7 +35,8 @@ p { font-family: var(--paragraph-font);}
 ::-webkit-scrollbar { width: 10px;}
 ::-webkit-scrollbar-track { border-radius: 10px;}
 ::-webkit-scrollbar-thumb {
-	background: var(--secondary-color);
+	background: var(--month-color);
+	/*background: var(--secondary-color);*/
 	border-radius:10px;
 }
 
@@ -75,13 +77,13 @@ nav {
 	border-radius: 20px;
     padding: 5px;
     background-color: #ffffff;
-    border: 2px inset #74bc2c;
+    border: 2px inset var(--secondary-color);
 	transition: 0.5s;
   }
 #logo:hover {
 		max-width: 100px;
-        border:2px inset #2a8533;
-        box-shadow: 2px 5px 2px #2a8533;
+        border:2px inset var(--primary-color);
+        box-shadow: 2px 5px 2px var(--primary-color);
 }
 .social {
 	display: flex;
@@ -120,9 +122,12 @@ nav {
 	transition: 0.5s;
 }
 .bountiful-nav ul li a:hover, .bountiful-nav ul li a.active, .join-fresh:hover {
-  	color: var(--nav-hover-link-color);
+  	/*color: var(--nav-hover-link-color);
 	background-color: var(--nav-hover-background-color);
-	border: 2px solid var(--primary-color);
+	border: 2px solid var(--primary-color);*/
+	color: var(--primary-color);
+	background-color: var(--accent1-color);
+	border: 3px solid var(--month-color);
 }
 nav ul {display: none;}
 nav ul.open {display: block;}
@@ -233,8 +238,8 @@ main h3 {
 	padding: 0 0.5rem;
 	height: 250px;
 	overflow-y: scroll;
-	border: 2px inset var(--secondary-color);
-	/*border: 2px solid var(--secondary-color);*/
+	border: 3px solid var(--month-color);
+	/*border: 2px inset var(--secondary-color);*/
 	border-radius: 10px;
 	box-shadow: var(--primary-color) 0px 2px 5px -1px, var(--accent2-color) 0px 1px 3px -1px;
 }
@@ -244,6 +249,7 @@ main h3 {
 	font-weight: bold;
 	margin: 0.5rem auto;
 }
+.info h3 {color: var(--month-color)}
 .choice {display: none;}
 .fresh {
 	margin: 2rem auto;
