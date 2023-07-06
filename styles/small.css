@@ -253,7 +253,7 @@ main h3 {
 }
 .fresh img, .info img {
 	display: block;
-	border-radius: 15px;
+	border-radius: 5px;
 	margin: 1rem auto;
 	max-width: 50%;
 	height: auto;
