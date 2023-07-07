@@ -122,12 +122,12 @@ nav {
 	transition: 0.5s;
 }
 .bountiful-nav ul li a:hover, .bountiful-nav ul li a.active {
-  	/*color: var(--nav-hover-link-color);
+  	color: var(--nav-hover-link-color);
 	background-color: var(--nav-hover-background-color);
-	border: 2px solid var(--primary-color);*/
-	color: var(--primary-color);
+	border: 2px solid var(--primary-color);
+	/*color: var(--primary-color);
 	background-color: var(--accent1-color);
-	border: 3px solid var(--month-color);
+	border: 3px solid var(--month-color);*/
 }
 .join-fresh:hover {
 	color: var(--nav-hover-link-color);
@@ -195,8 +195,9 @@ hr {
     position: absolute;
     top: 40%;
     width: auto;
-    padding: 16px;
+    padding: 5px;
     margin-top: -50px;
+	border: 2px solid var(--primary-color);
     color: var(--primary-color);
     font-weight: bold;
     font-size: 20px;
@@ -205,7 +206,7 @@ hr {
 }
 .prev { left: 0.5rem;}
 .next { right: 0.5rem;}
-.prev:hover, .next:hover, .prev-1:hover, .caption-container {
+.prev:hover, .next:hover, .caption-container {
     background-color: var(--paragraph-background-color);
     color: var(--accent1-color);
 }
@@ -254,7 +255,13 @@ main h3 {
 	font-weight: bold;
 	margin: 0.5rem auto;
 }
-.info h2 + h3, .info-img p:first-child b:nth-child(n) {color: var(--month-color)}
+
+.info h2 + h3, .info-img p:first-child b:nth-child(n), .info a:hover,.info figcaption {color: var(--month-color)}
+.info figcaption {
+	text-align: center;
+	color: var(--month-color);
+	line-height: 0;
+}
 .choice {display: none;}
 .fresh {
 	margin: 2rem auto;
@@ -266,7 +273,6 @@ main h3 {
 	display: block;
 	border-radius: 5px;
 	margin: 1rem auto;
-	max-width: 50%;
 	height: auto;
 	box-shadow: 5px 5px 3px rgba(86, 85, 85, 0.819);
 }
