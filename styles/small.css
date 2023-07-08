@@ -339,7 +339,7 @@ figure {line-height: 1;}
 .results p {padding: 0.5rem;}
 .resource p {padding: 1rem 2rem;}
 /* about us */
-.grid-us h1, .grid-us p { margin: 1rem;}
+.grid-us h1, .grid-us p, .info h2 { margin: 1rem;}
 /* footer */
 footer {
 	text-align: center;
