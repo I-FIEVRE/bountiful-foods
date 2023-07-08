@@ -74,6 +74,7 @@
     .days { column-gap: 0.5rem;}
     /* about us */
     .about-us h1, .about-us p { margin: 1rem 3rem;}
+    .location{ width: 400px;}
 
     /*footer*/
     .base {display: none;}
