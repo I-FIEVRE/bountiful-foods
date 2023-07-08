@@ -338,7 +338,8 @@ figure {line-height: 1;}
 .days h3 {font-size: 0.9rem;}
 .results p {padding: 0.5rem;}
 .resource p {padding: 1rem 2rem;}
-
+/* about us */
+.grid-us h1, .grid-us p { margin: 1rem;}
 /* footer */
 footer {
 	text-align: center;
