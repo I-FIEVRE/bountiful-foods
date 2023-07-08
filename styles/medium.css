@@ -73,7 +73,7 @@
     .today { column-gap: 0.2rem;}
     .days { column-gap: 0.5rem;}
     /* about us */
-    .grid-us h1, .grid-us p { margin: 1rem 3rem;}
+    .about-us h1, .about-us p { margin: 1rem 3rem;}
 
     /*footer*/
     .base {display: none;}

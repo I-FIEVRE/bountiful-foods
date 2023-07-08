@@ -340,6 +340,16 @@ figure {line-height: 1;}
 .resource p {padding: 1rem 2rem;}
 /* about us */
 .grid-us h1, .grid-us p, .info h2 { margin: 1rem;}
+.location {
+	margin: 1rem auto;
+	padding-top: 1rem;
+	width: 300px;
+	height: auto;
+	text-align: center;
+	border: 3px inset var(--secondary-color);
+	border-radius: 10px;
+	box-shadow: var(--primary-color) 0px 2px 5px -1px, var(--accent2-color) 0px 1px 3px -1px;
+}
 /* footer */
 footer {
 	text-align: center;
