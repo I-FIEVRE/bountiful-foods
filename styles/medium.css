@@ -75,7 +75,7 @@
     /* about us */
     .about-us h1, .about-us p { margin: 1rem 3rem;}
     .location1{ width: 400px;}
-
+    #location { width: 60%;}
     /*footer*/
     .base {display: none;}
     .medium {display: block;}
