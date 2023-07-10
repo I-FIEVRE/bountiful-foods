@@ -46,23 +46,23 @@
     <main class="grid-fresh">
         <div>
             <h1>Build your own Speciality Drink</h1>
-            <form method="get" action="#">
+            <form method="post">
                 <div class="f-grid">
                     <fieldset class="f1">
-                        <label class="info1">First Name<input type="text" name="fname" required></label>
-                        <label class="info1">Email<input type="email" name="email" placeholder="someone@gmail.com" required></label>
-                        <label class="info1">Phone<input type="tel" name="phone" required></label>
+                        <label id="name1" class="info1">First Name<input type="text" name="fname" required></label>
+                        <label id="mail" class="info1">Email<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                        <label id="phone" class="info1">Phone<input type="tel" name="phone" required></label>
                         <label class="info1">Select your First Fruit<select name="fruit1" class="choice1"></select></label>
-                        <label class="info1">Select Your Second Fruit<select name="fruit2" class="choice2"></select></label> 
+                        <label class="info1">Select your Second Fruit<select name="fruit2" class="choice2"></select></label> 
                         <label class="info1">Select your Third Fruit<select name="fruit3" class="choice3"></select></label>  
                         <label class="info1">Special Instructions<textarea name="description"></textarea></label>
                     </fieldset>
                     <p><span class="speciality"></span></p>
                 </div>
-                <input type="submit" value="Build my Drink" class="subBtn">
+                <input type="submit" onclick="return displayResults()" value="Build my Drink" class="subBtn">
             </form>    
         </div>
-        
+        <div class="results" style="height: 50px; width: 100%;"></div>
     </main>
     <footer>
         <hr class="foot">

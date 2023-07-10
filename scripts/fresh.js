@@ -38,4 +38,15 @@ function createList3 (fruits) {
   }      
 }
 
+function displayResults() {
+  const results = document.querySelector('div.results');
+  const name1 = getElementById("name1").value;
+  const mail = document.getElementById("mail").value;
+  const phone = document.querySelector("#phone").value;
+  results.innerHTML =  name1;
+  
+}
+
 getFruitData(url); 
+
+//document.querySelector('input.subBtn').addEventListener('click', displayResults);
