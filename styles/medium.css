@@ -72,8 +72,12 @@
     .current-weather { margin: 1rem;}
     .today { column-gap: 0.2rem;}
     .days { column-gap: 0.5rem;}
+    /* fresh */
+    .grid-fresh h1 { font-size: 1.5rem;}
+    .subBtn {font-size: 1.3rem;}
     /* about us */
-    .about-us h1, .about-us p { margin: 1rem 3rem;}
+    .grid-us h1{ font-size: 1.5rem;}
+    .grid-us p { margin: 1rem 3rem;}
     .location1{ width: 400px;}
     #location { width: 60%;}
     /*footer*/

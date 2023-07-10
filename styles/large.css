@@ -78,8 +78,11 @@
 	margin: 1rem auto;
     }
     /*.weather { grid-template-columns: 15% 30%  10% 30% 15%;}*/
+    /* fresh */ 
+    .grid-fresh h1 { font-size: 2rem;}
     /* about us */
-    .grid-us h1, .grid-us p { margin: 1rem 6rem;}
+    .grid-us h1{ font-size: 2rem;}
+    .grid-us p { margin: 1rem 6rem;}
    
     /* footer */
     footer p {

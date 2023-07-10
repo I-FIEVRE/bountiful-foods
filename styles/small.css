@@ -339,8 +339,67 @@ figure {line-height: 1;}
 .results p {padding: 0.5rem;}
 .resource p {padding: 1rem 2rem;}
 /*fresh*/
+.grid-fresh h1 {text-align: center;}
+.grid-fresh  {
+    padding: 10px; 
+	margin: 1rem; 
+	font-weight: bold;
+ }
+.grid-fresh form fieldset {
+    margin: 0.5rem auto;
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem 5%;
+    width: 100%;
+    min-width: 200px;  
+}
+.grid-fresh {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+}
+.grid-fresh form label.info1, .grid-fresh form label.info1 input, .grid-fresh form textarea, .subBtn {
+    display: block;
+    width: 100%;
+    max-width: 40rem;
+    margin-bottom: 1rem;
+	margin-left: auto;   
+	margin-right: auto;
+}
+.grid-fresh form label.info1 input, .grid-fresh form textarea, .grid-fresh form select {
+    border-radius: 4px;
+    border: var(--secondary-color) solid 2px;
+    padding: .5rem;
+}
+.grid-fresh form textarea {min-height: 100px;}
+.grid-fresh form label.info1 input:required, .grid-fresh form textarea:required, .grid-fresh form select:required {
+    border-left: var(--month-color) solid 5px;
+}
+.grid-fresh form label.info1 input:required:valid, .grid-fresh form textarea:required:valid, .grid-fresh select:required:valid {
+    border-left: var(--secondary-color) solid 5px;
+}
+.grid-fresh form select {
+	display: block;
+	margin-bottom: 1rem;
+}
+.subBtn {
+    background-color: #ffffff;
+    color: var(--primary-color);
+    border: 3px inset var(--primary-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 1rem;
+    padding: 10px;
+ }
+.subBtn:hover { 
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
 /* about us */
-.grid-us h1, .grid-us p, .info h2 { margin: 1rem;}
+.grid-us h1 { text-align: center;}
+.grid-us p, .info h2 { margin: 1rem;}
 .location1 {
 	margin: 1rem auto;
 	padding-top: 1rem;
