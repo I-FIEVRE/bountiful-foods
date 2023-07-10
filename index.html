@@ -46,43 +46,44 @@
     <main class="grid-home">
         <br>
         <div class="container">
+          <!-- I don't use  loading="lazy" in the class mySlides because it creates a visual issue-->
             <div class="mySlides">
-              <img src="images/pexels-jane-doan-1132047.webp" alt="Fruits" loading="lazy">
+              <img src="https://via.placeholder.com/500x333" data-src="images/pexels-jane-doan-1132047.webp" alt="Fruits" >
             </div>               
             <div class="mySlides">
-              <img src="images/pexels-denys-gromov-5668206.webp" alt="Fruit Water with lemon" loading="lazy">
+              <img src="https://via.placeholder.com/500x333" data-src="images/pexels-denys-gromov-5668206.webp" alt="Fruit Water with lemon">
             </div>          
             <div class="mySlides">
-              <img src="images/pexels-denys-gromov-5668258.webp" alt="Fruit Water with strawberry" loading="lazy">
+              <img src="https://via.placeholder.com/500x333" data-src="images/pexels-denys-gromov-5668258.webp" alt="Fruit Water with strawberry">
             </div>          
             <div class="mySlides">
-              <img src="images/pexels-jill-wellington-39351.webp" alt="Grape" loading="lazy">
+              <img src="https://via.placeholder.com/500x333" data-src="images/pexels-jill-wellington-39351.webp" alt="Grape">
             </div>         
             <div class="mySlides">
-              <img src="images/pexels-ryan-baker-129574.webp" alt="Citrus" loading="lazy">
+              <img src="https://via.placeholder.com/500x333" data-src="images/pexels-ryan-baker-129574.webp" alt="Citrus">
             </div>
             <div class="mySlides">
-              <img src="images/pexels-wendy-wei-1656663.webp" alt="Vegetables" loading="lazy">
+              <img src="https://via.placeholder.com/500x333" data-src="images/pexels-wendy-wei-1656663.webp" alt="Vegetables">
             </div>
             <div class="mySlides">
-              <img src="images/pexels-sarah-chai-7263018.webp" alt="Fruit Bag" loading="lazy">
+              <img src="https://via.placeholder.com/500x333" data-src="images/pexels-sarah-chai-7263018.webp" alt="Fruit Bag">
             </div>
             <div class="mySlides">
-              <img src="images/pexels-karina-zhukovskaya-11631746.webp" alt="Baskets" loading="lazy">
+              <img src="https://via.placeholder.com/500x333" data-src="images/pexels-karina-zhukovskaya-11631746.webp" alt="Baskets">
             </div>
             <div class="mySlides">
-              <img src="images/pexels-andre-saddi-13985154.webp" alt="Pizza" loading="lazy">
+              <img src="https://via.placeholder.com/500x333" data-src="images/pexels-andre-saddi-13985154.webp" alt="Pizza">
             </div>
             <div class="mySlides">
-              <img src="images/pexels-lisa-fotios-1152237.webp" alt="Salad" loading="lazy">
+              <img src="https://via.placeholder.com/500x333" data-src="images/pexels-lisa-fotios-1152237.webp" alt="Salad">
             </div>
             <div class="mySlides">
-              <img src="images/pexels-lisa-fotios-1351238.webp" alt="Bruschette" loading="lazy">
+              <img src="https://via.placeholder.com/500x333" data-src="images/pexels-lisa-fotios-1351238.webp" alt="Bruschette">
             </div>
             <div class="mySlides">
-              <img src="images/pexels-shameel-mukkath-14930536.webp" alt="Juice" loading="lazy">
+              <img src="https://via.placeholder.com/500x333" data-src="images/pexels-shameel-mukkath-14930536.webp" alt="Juice">
             </div>
-            <div class="mySlides"><img src="images/pexels-ylanite-koppens-2479242.webp" alt="Juice" loading="lazy">
+            <div src="https://via.placeholder.com/500x333" data-class="mySlides"><img src="images/pexels-ylanite-koppens-2479242.webp" alt="Juice">
             </div>
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -91,13 +92,13 @@
             </div>
             <div class="row1">
               <div class="column1">
-                <img class="min" src="images/pexels-jane-doan-1132047-150.jpg" style="width:100%" onclick="currentSlide(1)" alt="Our Organic Fruits">
+                <img class="min" src="images/pexels-jane-doan-1132047-150.jpg" style="width:100%" onclick="currentSlide(1)" alt="Our Organic Fruits" loading="lazy">
               </div>
               <div class="column1">
-                <img class="min" src="images/pexels-denys-gromov-5668206-150.webp" style="width:100%" onclick="currentSlide(2)" alt="Our Organic Fruit Water">
+                <img class="min" src="images/pexels-denys-gromov-5668206-150.webp" style="width:100%" onclick="currentSlide(2)" alt="Our Organic Fruit Water" loading="lazy">
               </div>
               <div class="column1">
-                <img class="min" src="images/pexels-denys-gromov-5668258-150.webp" style="width:100%" onclick="currentSlide(3)" alt="Our Oganic Fruit Water">
+                <img class="min" src="images/pexels-denys-gromov-5668258-150.webp" style="width:100%" onclick="currentSlide(3)" alt="Our Oganic Fruit Water" loading="lazy">
               </div>
               <div class="column1">
                 <img class="min" src="images/pexels-jill-wellington-39351-150.jpg" style="width:100%" onclick="currentSlide(4)" alt="Grape directly from California Farmers">
@@ -238,6 +239,7 @@
     </footer>
     <script src="scripts/main.js"></script>
     <script src="scripts/header.js"></script>
+    <script src="scripts/lazyloading.js"></script>
     <script src="scripts/slide.js"></script>
     <script src="scripts/weatherapi.js"></script>
     <script src="scripts/speciality.js"></script>
