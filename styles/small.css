@@ -368,7 +368,7 @@ figure {line-height: 1;}
 }
 .grid-fresh form label.info1 input, .grid-fresh form textarea, .grid-fresh form select {
     border-radius: 4px;
-    border: var(--secondary-color) solid 2px;
+    border: var(--primary-color) solid 2px;
     padding: .5rem;
 }
 .grid-fresh form textarea {min-height: 100px;}
@@ -376,7 +376,7 @@ figure {line-height: 1;}
     border-left: var(--month-color) solid 5px;
 }
 .grid-fresh form label.info1 input:required:valid, .grid-fresh form textarea:required:valid, .grid-fresh select:required:valid {
-    border-left: var(--secondary-color) solid 5px;
+    border-left: var(--primary-color) solid 5px;
 }
 .grid-fresh form select {
 	display: block;
