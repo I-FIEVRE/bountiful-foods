@@ -46,23 +46,51 @@
     <main class="grid-fresh">
         <div>
             <h1>Build your own Speciality Drink</h1>
-            <form method="post">
+            <form action="#">
                 <div class="f-grid">
-                    <fieldset class="f1">
-                        <label id="name1" class="info1">First Name<input type="text" name="fname" required></label>
-                        <label id="mail" class="info1">Email<input type="email" name="email" placeholder="someone@gmail.com" required></label>
-                        <label id="phone" class="info1">Phone<input type="tel" name="phone" required></label>
-                        <label class="info1">Select your First Fruit<select name="fruit1" class="choice1"></select></label>
-                        <label class="info1">Select your Second Fruit<select name="fruit2" class="choice2"></select></label> 
-                        <label class="info1">Select your Third Fruit<select name="fruit3" class="choice3"></select></label>  
-                        <label class="info1">Special Instructions<textarea name="description"></textarea></label>
+                    <fieldset>
+                        <label class="info1">First Name<input id="name1" type="text" name="fname" required></label>
+                        <label class="info1">Email<input id="mail" type="email" name="email" placeholder="someone@gmail.com" required></label>
+                        <label class="info1">Phone<input id="phone" type="tel" name="phone" required></label>
+                        <label class="info1">Select your First Fruit<select id="fruit1" name="fruit1" class="choice1"></select></label>
+                        <label class="info1">Select your Second Fruit<select id="fruit2" name="fruit2" class="choice2"></select></label> 
+                        <label class="info1">Select your Third Fruit<select id="fruit3" name="fruit3" class="choice3"></select></label>  
+                        <label class="info1">Special Instructions<textarea id="instructions" name="description"></textarea></label>
                     </fieldset>
                     <p><span class="speciality"></span></p>
                 </div>
-                <input type="submit" onclick="return displayResults()" value="Build my Drink" class="subBtn">
+                <input type="button"  value="Build my Drink" class="subBtn" id="subBtn">
+                <div class="results">
+                    <label for="first-name"></label>
+                    <input type="text" id="first-name" name="first-name" disabled>
+                </div>
+                <div class="results">
+                    <label for="email"></label>
+                    <input type="text" id="email" name="email" disabled>
+                </div>
+                <div class="results">
+                    <label for="nb-phone"></label>
+                    <input type="text" id="nb-phone" name="nb-phone" disabled>
+                </div>
+                <div class="results">
+                    <label for="fr1"></label>
+                    <input type="text" id="fr1" name="fr1" disabled>
+                </div>
+                <div class="results">
+                    <label for="fr2"></label>
+                    <input type="text" id="fr2" name="fr2" disabled>
+                </div>
+                <div class="results">
+                    <label for="fr3"></label>
+                    <input type="text" id="fr3" name="fr3" disabled>
+                </div>
+                <div class="results">
+                    <label for="comment"></label>
+                    <input type="text" id="comment" name="comment" disabled>
+                </div>
             </form>    
         </div>
-        <div class="results" style="height: 50px; width: 100%;"></div>
+        
     </main>
     <footer>
         <hr class="foot">

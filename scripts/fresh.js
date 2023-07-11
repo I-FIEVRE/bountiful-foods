@@ -39,14 +39,34 @@ function createList3 (fruits) {
 }
 
 function displayResults() {
-  const results = document.querySelector('div.results');
-  const name1 = getElementById("name1").value;
+  const firstName = document.querySelector("#first-name");
+  const email = document.querySelector("#email");
+  const nbPhone = document.querySelector("#nb-phone");
+  const fr1 = document.querySelector("#fr1");
+  const fr2 = document.querySelector("#fr2");
+  const fr3 = document.querySelector("#fr3");
+  const comment = document.querySelector("#comment");
+  const name1 = document.getElementById("name1").value;
   const mail = document.getElementById("mail").value;
   const phone = document.querySelector("#phone").value;
-  results.innerHTML =  name1;
-  
+  const fruit1 = document.querySelector("#fruit1").value;
+  const fruit2 = document.querySelector("#fruit2").value;
+  const fruit3 = document.querySelector("#fruit3").value;
+  const instructions = document.querySelector("#instructions").value;
+  firstName.value = name1;
+  email.value = mail;
+  nbPhone.value = phone;
+  fr1.value = fruit1;
+  fr2.value = fruit2;
+  fr3.value = fruit3;
+  comment.value = `Instructions: ${instructions}`;
 }
+
+
+
+//document.querySelector("form").addEventListener("submit", displayResults);
+document.querySelector("#subBtn").addEventListener('click', displayResults);
+
 
 getFruitData(url); 
 
-//document.querySelector('input.subBtn').addEventListener('click', displayResults);

@@ -358,7 +358,7 @@ figure {line-height: 1;}
     justify-content: center;
     grid-template-columns: 1fr;
 }
-.grid-fresh form label.info1, .grid-fresh form label.info1 input, .grid-fresh form textarea, .subBtn {
+.results input, .grid-fresh form label.info1, .grid-fresh form label.info1 input, .grid-fresh form textarea, .subBtn {
     display: block;
     width: 100%;
     max-width: 40rem;
@@ -397,6 +397,17 @@ figure {line-height: 1;}
     background-color: var(--primary-color);
     color: #ffffff;
 }
+.results input {
+	background-color: #ffffff;
+	border: none;	
+	text-align: center;
+	font-weight: bold;
+}
+#first-name {
+	margin-top: 2rem;
+	color: var(--primary-color); 
+}
+#fr1, #fr2, #fr3 {color: var(--month-color);}
 /* about us */
 .grid-us h1 { text-align: center;}
 .grid-us p, .info h2 { margin: 1rem;}
