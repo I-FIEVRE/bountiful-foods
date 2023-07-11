@@ -1,13 +1,5 @@
 const url = 'https://brotherblazzard.github.io/canvas-content/fruit.json';
 
-
-const amountCarbo = document.querySelector("#amount-carbo");
-const amountPro = document.querySelector("#amount-pro");
-const amountFat = document.querySelector("#amount-fat");
-const amountSugar = document.querySelector("#amount-sugar");
-const amountCal = document.querySelector("#amount-cal");
-
-
 async function getFruitData(url) {
     const response = await fetch(url);
     const fruits = await response.json(); 
@@ -22,17 +14,17 @@ function createList1 (fruits) {
     for (i = 0 ; i< fruits.length; i++) {
       let option = document.createElement('option');
       let carbohydrates = fruits[i].nutritions.carbohydrates;
-    let protein = fruits[i].nutritions.protein;
-    let fat = fruits[i].nutritions.fat;
-    let sugar = fruits[i].nutritions.sugar;
-    let calories = fruits[i].nutritions.calories;
-    option.setAttribute('value', fruits[i].name);
-    option.setAttribute('data-carbo', carbohydrates);
-    option.setAttribute('data-pro', protein);
-    option.setAttribute('data-fat', fat);
-    option.setAttribute('data-sugar', sugar);
-    option.setAttribute('data-cal', calories);
-    option.textContent = `${fruits[i].name}`;
+      let protein = fruits[i].nutritions.protein;
+      let fat = fruits[i].nutritions.fat;
+      let sugar = fruits[i].nutritions.sugar;
+      let calories = fruits[i].nutritions.calories;
+      option.setAttribute('value', fruits[i].name);
+      option.setAttribute('data-carbo', carbohydrates);
+      option.setAttribute('data-pro', protein);
+      option.setAttribute('data-fat', fat);
+      option.setAttribute('data-sugar', sugar);
+      option.setAttribute('data-cal', calories);
+      option.textContent = `${fruits[i].name}`;
       choice1.appendChild(option);
     }   
 }
@@ -84,9 +76,6 @@ function displayResults(fruits) {
   const fr1 = document.querySelector("#fr1");
   const fr2 = document.querySelector("#fr2");
   const fr3 = document.querySelector("#fr3");
-  const f1 = document.querySelector("#fruit1");
-  const f2 = document.querySelector("#fruit2");
-  const f3 = document.querySelector("#fruit3");
   const comment = document.querySelector("#comment");
   
   const name1 = document.querySelector("#name1").value;
@@ -132,6 +121,13 @@ function displayResults(fruits) {
   console.log(index1);
   console.log(index2);
   console.log(index3);
+
+  const amountCarbo = document.querySelector("#amount-carbo");
+  const amountPro = document.querySelector("#amount-pro");
+  const amountFat = document.querySelector("#amount-fat");
+  const amountSugar = document.querySelector("#amount-sugar");
+  const amountCal = document.querySelector("#amount-cal");
+
 
   amountCarbo.value = (parseFloat(list1[index1].getAttribute('data-carbo')) + parseFloat(list2[index2].getAttribute('data-carbo')) + parseFloat(list3[index3].getAttribute('data-carbo'))).toFixed(2);
   amountPro.value = (parseFloat(list1[index1].getAttribute('data-pro')) + parseFloat(list2[index2].getAttribute('data-pro')) + parseFloat(list3[index3].getAttribute('data-pro'))).toFixed(2);
