@@ -1,4 +1,3 @@
-
 const url = 'https://brotherblazzard.github.io/canvas-content/fruit.json';
 async function getFruitData(url) {
     const response = await fetch(url);
