@@ -44,6 +44,7 @@ function displayResults() {
   const fr1 = document.querySelector("#fr1");
   const fr2 = document.querySelector("#fr2");
   const fr3 = document.querySelector("#fr3");
+
   const comment = document.querySelector("#comment");
   const name1 = document.getElementById("name1").value;
   const mail = document.getElementById("mail").value;
@@ -52,6 +53,7 @@ function displayResults() {
   const fruit2 = document.querySelector("#fruit2").value;
   const fruit3 = document.querySelector("#fruit3").value;
   const instructions = document.querySelector("#instructions").value;
+
   firstName.value = name1;
   email.value = mail;
   nbPhone.value = phone;
@@ -59,6 +61,11 @@ function displayResults() {
   fr2.value = fruit2;
   fr3.value = fruit3;
   comment.value = `Instructions: ${instructions}`;
+
+  let now = new Date();
+  document.getElementById('orderDate').value = `${now.toLocaleDateString()}, ${now.toLocaleTimeString()}`;
+
+
 }
 
 

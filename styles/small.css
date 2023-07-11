@@ -403,8 +403,9 @@ figure {line-height: 1;}
 	text-align: center;
 	font-weight: bold;
 }
+#orderDate {margin-top: 2rem;}
 #first-name {
-	margin-top: 2rem;
+	margin-top: 1rem;
 	color: var(--primary-color); 
 }
 #fr1, #fr2, #fr3 {color: var(--month-color);}
