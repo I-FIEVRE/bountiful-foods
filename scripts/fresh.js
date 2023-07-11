@@ -60,7 +60,7 @@ function displayResults() {
   fr1.value = fruit1;
   fr2.value = fruit2;
   fr3.value = fruit3;
-  comment.value = `Instructions: ${instructions}`;
+  comment.value = instructions;
 
   let now = new Date();
   document.getElementById('orderDate').value = `${now.toLocaleDateString()}, ${now.toLocaleTimeString()}`;

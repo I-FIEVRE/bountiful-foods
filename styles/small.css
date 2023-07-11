@@ -358,7 +358,7 @@ figure {line-height: 1;}
     justify-content: center;
     grid-template-columns: 1fr;
 }
-.results input, .grid-fresh form label.info1, .grid-fresh form label.info1 input, .grid-fresh form textarea, .subBtn {
+.results input, .grid-fresh form select, .grid-fresh form label.info1, .grid-fresh form label.info1 input, .grid-fresh form textarea, .subBtn {
     display: block;
     width: 100%;
     max-width: 40rem;
@@ -371,7 +371,7 @@ figure {line-height: 1;}
     border: var(--primary-color) solid 2px;
     padding: .5rem;
 }
-.grid-fresh form textarea {min-height: 100px;}
+.grid-fresh form textarea {min-height: 50px;}
 .grid-fresh form label.info1 input:required, .grid-fresh form textarea:required, .grid-fresh form select:required {
     border-left: var(--month-color) solid 5px;
 }
@@ -383,19 +383,19 @@ figure {line-height: 1;}
 	margin-bottom: 1rem;
 }
 .subBtn {
-    background-color: #ffffff;
-    color: var(--primary-color);
-    border: 3px inset var(--primary-color);
+	background-color: var(--primary-color);
+    color: #ffffff;
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: bold;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-top: 1rem;
-    padding: 10px;
+    padding: 10px 0;
  }
 .subBtn:hover { 
-    background-color: var(--primary-color);
-    color: #ffffff;
+    background-color: #ffffff;
+    color: var(--primary-color);
+    border: 3px inset var(--primary-color);
 }
 .results input {
 	background-color: #ffffff;
@@ -408,7 +408,15 @@ figure {line-height: 1;}
 	margin-top: 1rem;
 	color: var(--primary-color); 
 }
+#fruits {
+	display:flex; 
+	flex-direction: row; 
+	max-width: 30rem;
+	margin-left: auto;   
+	margin-right: auto;
+}
 #fr1, #fr2, #fr3 {color: var(--month-color);}
+#comment {max-width: 60rem;}
 /* about us */
 .grid-us h1 { text-align: center;}
 .grid-us p, .info h2 { margin: 1rem;}
