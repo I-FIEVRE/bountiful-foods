@@ -6,7 +6,6 @@ async function getFruitData(url) {
     createList1(fruits);
     createList2(fruits);
     createList3(fruits);
-    displayResults(fruits);
   } 
 
 function createList1 (fruits) {  
@@ -69,7 +68,7 @@ function createList3 (fruits) {
   }      
 }
 
-function displayResults(fruits) {
+function displayResults() {
   const firstName = document.querySelector("#first-name");
   const email = document.querySelector("#email");
   const nbPhone = document.querySelector("#nb-phone");
