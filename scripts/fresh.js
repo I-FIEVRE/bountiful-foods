@@ -63,8 +63,6 @@ function displayResults() {
 }
 
 
-
-//document.querySelector("form").addEventListener("submit", displayResults);
 document.querySelector("#subBtn").addEventListener('click', displayResults);
 
 
