@@ -446,4 +446,5 @@ footer hr {margin-top: 0.5rem;}
 .medium {display: none;}
 @media only screen and (max-width: 450px) {
 	footer h3 {font-size: 0.9rem;}
+	.grid-fresh h1, .grid-us h1 {font-size: 1.1rem;}
 }
