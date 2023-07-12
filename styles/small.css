@@ -265,7 +265,7 @@ main h3 {
 .choice {display: none;}
 .fresh {
 	margin: 2rem auto;
-	padding: 2rem 0;
+	padding-top: 1rem;
 	width: 300px;
 	height: auto;
 }
@@ -319,7 +319,6 @@ main h3 {
 .today {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	
 	padding-top: 0.3rem;
 	column-gap: 0.5rem;
 }
