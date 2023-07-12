@@ -80,8 +80,9 @@
    .weather {
     grid-area: weather;
     display:block;
-	margin: 1rem auto;
+	margin: 0.5rem auto;
     }
+    .current-weather { margin-top: 0.5rem;}
     /*.weather { grid-template-columns: 15% 30%  10% 30% 15%;}*/
     /* fresh */ 
     .grid-fresh h1 { font-size: 2rem;}
