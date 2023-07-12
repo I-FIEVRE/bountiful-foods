@@ -265,7 +265,7 @@ main h3 {
 .choice {display: none;}
 .fresh {
 	margin: 2rem auto;
-	padding-top: 1rem;
+	padding: 2rem 0;
 	width: 300px;
 	height: auto;
 }

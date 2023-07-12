@@ -71,7 +71,7 @@
     .info { 
         grid-area: info;
         width: 600px;
-        height: 600px;
+        height: 650px;
     }
    .weather {
     grid-area: weather;
