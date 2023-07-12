@@ -358,7 +358,7 @@ figure {line-height: 1;}
     justify-content: center;
     grid-template-columns: 1fr;
 }
-.results input, .grid-fresh form select, .grid-fresh form label.info1, .grid-fresh form label.info1 input, .grid-fresh form textarea, .subBtn {
+.results, .grid-fresh form select, .grid-fresh form label.info1, .grid-fresh form label.info1 input, .grid-fresh form textarea, .subBtn {
     display: block;
     width: 100%;
     max-width: 40rem;
@@ -397,12 +397,15 @@ figure {line-height: 1;}
     color: var(--primary-color);
     border: 3px inset var(--primary-color);
 }
-
-.results {
+.results section {
 	text-align: center;
-	font-weight: bold;
+	margin: 1rem auto;
+	padding: 1rem 0.5rem;
+	border: 2px inset var(--primary-color);
 }
-
+.results section p:last-child b {color: var(--primary-color);}
+.results section p:first-child b {text-decoration: underline;}
+.results h3 { color: var(--month-color);}
 /* about us */
 .grid-us h1 { text-align: center;}
 .grid-us p, .info h2 { margin: 1rem;}

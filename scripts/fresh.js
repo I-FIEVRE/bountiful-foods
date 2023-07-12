@@ -72,7 +72,8 @@ function displayResults() {
   const results = document.querySelector('div.results');
   
   let now = new Date();
- 
+  
+  let drink = document.createElement('section');
   let p1 = document.createElement('p');
   let h2 = document.createElement('h2');
   let p2 = document.createElement('p');
@@ -111,27 +112,23 @@ function displayResults() {
   let amountSugar = (parseFloat(list1[index1].getAttribute('data-sugar')) + parseFloat(list2[index2].getAttribute('data-sugar')) + parseFloat(list3[index3].getAttribute('data-sugar'))).toFixed(2);
   let amountCal = (parseFloat(list1[index1].getAttribute('data-cal')) + parseFloat(list2[index2].getAttribute('data-cal')) + parseFloat(list3[index3].getAttribute('data-cal'))).toFixed(2);
  
-  
-
-  p1.innerHTML = `My Drink on ${now.toLocaleDateString()} at ${now.toLocaleTimeString()}`;
+  p1.innerHTML = `&#128203; <b>My Drink</b> <br>${now.toLocaleDateString()}, ${now.toLocaleTimeString()}`;
   h2.innerHTML = name1;
   p2.innerHTML = `${mail}<br>${phone}`;
   h3.innerHTML = `<b>${fruit1} - ${fruit2} - ${fruit3}</b>`;
-  p3.innerHTML = `Instructions: ${instructions}`;
-  p4.innerHTML = `<b>Carbohydrates: ${amountCarbo}<br>Protein: ${amountPro}<br>Fat: ${amountFat}<br>Sugar: ${amountSugar}<br>Calories: ${amountCal}</b>`;
+  p3.innerHTML = `<u>Instructions:</u> ${instructions}`;
+  p4.innerHTML = `Carbohydrates: <b>${amountCarbo}</b><br>Protein: <b>${amountPro}</b><br>Fat: <b>${amountFat}</b><br>Sugar: <b>${amountSugar}</b><br>Calories: <b>${amountCal}</b>`;
 
-  results.appendChild(p1);
-  results.appendChild(h2);
-  results.appendChild(p2);
-  results.appendChild(h3);
-  results.appendChild(p3);
-  results.appendChild(p4);
-  
+  drink.appendChild(p1);
+  drink.appendChild(h2);
+  drink.appendChild(p2);
+  drink.appendChild(h3);
+  drink.appendChild(p3);
+  drink.appendChild(p4);
+  results.appendChild(drink);
 }
   
-
 document.querySelector("#subBtn").addEventListener('click', displayResults);
-
 
 getFruitData(url); 
 
