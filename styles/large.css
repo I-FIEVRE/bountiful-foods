@@ -66,7 +66,8 @@
         '. weather info .'
         '. weather info .';
     }
-    .fresh {grid-area: fresh;}
+    .fresh { grid-area: fresh;}
+    .fresh img { max-width: 70%;}
     .info { 
         grid-area: info;
         width: 600px;
