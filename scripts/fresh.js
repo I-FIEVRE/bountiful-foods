@@ -69,14 +69,17 @@ function createList3 (fruits) {
 }
 
 function displayResults() {
-  const firstName = document.querySelector("#first-name");
-  const email = document.querySelector("#email");
-  const nbPhone = document.querySelector("#nb-phone");
-  const fr1 = document.querySelector("#fr1");
-  const fr2 = document.querySelector("#fr2");
-  const fr3 = document.querySelector("#fr3");
-  const comment = document.querySelector("#comment");
+  const results = document.querySelector('div.results');
   
+  let now = new Date();
+ 
+  let p1 = document.createElement('p');
+  let h2 = document.createElement('h2');
+  let p2 = document.createElement('p');
+  let h3 = document.createElement('h3');
+  let p3 = document.createElement('p');
+  let p4 = document.createElement('p');
+
   const name1 = document.querySelector("#name1").value;
   const mail = document.querySelector("#mail").value;
   const phone = document.querySelector("#phone").value;
@@ -85,57 +88,47 @@ function displayResults() {
   const fruit3 = document.querySelector("#fruit3").value;
   const instructions = document.querySelector("#instructions").value;
 
-  firstName.value = name1;
-  email.value = mail;
-  nbPhone.value = phone;
-  fr1.value = fruit1;
-  fr2.value = fruit2;
-  fr3.value = fruit3;
-  comment.value = instructions;
-
-  console.log(fr1.value);
-  console.log(fr2.value);
-  console.log(fr3.value);
-
-  let now = new Date();
-  document.getElementById('orderDate').value = `${now.toLocaleDateString()}, ${now.toLocaleTimeString()}`;
-
   let list1 = document.getElementById("fruit1").options;
   let list2 = document.getElementById("fruit2").options;
   let list3 = document.getElementById("fruit3").options;
 
   let index1 = 0;
-  while (list1[index1].text != fr1.value ) {
+  while (list1[index1].text != fruit1 ) {
     index1 +=1;
   }
   let index2 = 0;
-  while (list2[index2].text != fr2.value ) {
+  while (list2[index2].text != fruit2 ) {
     index2 +=1;
   }
   let index3 = 0;
-  while (list3[index3].text != fr3.value ) {
+  while (list3[index3].text != fruit3 ) {
     index3 +=1;
   }
 
-  console.log(index1);
-  console.log(index2);
-  console.log(index3);
+  let amountCarbo = (parseFloat(list1[index1].getAttribute('data-carbo')) + parseFloat(list2[index2].getAttribute('data-carbo')) + parseFloat(list3[index3].getAttribute('data-carbo'))).toFixed(2);
+  let amountPro = (parseFloat(list1[index1].getAttribute('data-pro')) + parseFloat(list2[index2].getAttribute('data-pro')) + parseFloat(list3[index3].getAttribute('data-pro'))).toFixed(2);
+  let amountFat = (parseFloat(list1[index1].getAttribute('data-fat')) + parseFloat(list2[index2].getAttribute('data-fat')) + parseFloat(list3[index3].getAttribute('data-fat'))).toFixed(2);
+  let amountSugar = (parseFloat(list1[index1].getAttribute('data-sugar')) + parseFloat(list2[index2].getAttribute('data-sugar')) + parseFloat(list3[index3].getAttribute('data-sugar'))).toFixed(2);
+  let amountCal = (parseFloat(list1[index1].getAttribute('data-cal')) + parseFloat(list2[index2].getAttribute('data-cal')) + parseFloat(list3[index3].getAttribute('data-cal'))).toFixed(2);
+ 
+  
 
-  const amountCarbo = document.querySelector("#amount-carbo");
-  const amountPro = document.querySelector("#amount-pro");
-  const amountFat = document.querySelector("#amount-fat");
-  const amountSugar = document.querySelector("#amount-sugar");
-  const amountCal = document.querySelector("#amount-cal");
+  p1.innerHTML = `My Drink on ${now.toLocaleDateString()} at ${now.toLocaleTimeString()}`;
+  h2.innerHTML = name1;
+  p2.innerHTML = `${mail}<br>${phone}`;
+  h3.innerHTML = `<b>${fruit1} - ${fruit2} - ${fruit3}</b>`;
+  p3.innerHTML = `Instructions: ${instructions}`;
+  p4.innerHTML = `<b>Carbohydrates: ${amountCarbo}<br>Protein: ${amountPro}<br>Fat: ${amountFat}<br>Sugar: ${amountSugar}<br>Calories: ${amountCal}</b>`;
 
-
-  amountCarbo.value = (parseFloat(list1[index1].getAttribute('data-carbo')) + parseFloat(list2[index2].getAttribute('data-carbo')) + parseFloat(list3[index3].getAttribute('data-carbo'))).toFixed(2);
-  amountPro.value = (parseFloat(list1[index1].getAttribute('data-pro')) + parseFloat(list2[index2].getAttribute('data-pro')) + parseFloat(list3[index3].getAttribute('data-pro'))).toFixed(2);
-  amountFat.value = (parseFloat(list1[index1].getAttribute('data-fat')) + parseFloat(list2[index2].getAttribute('data-fat')) + parseFloat(list3[index3].getAttribute('data-fat'))).toFixed(2);
-  amountSugar.value = (parseFloat(list1[index1].getAttribute('data-sugar')) + parseFloat(list2[index2].getAttribute('data-sugar')) + parseFloat(list3[index3].getAttribute('data-sugar'))).toFixed(2);
-  amountCal.value = (parseFloat(list1[index1].getAttribute('data-cal')) + parseFloat(list2[index2].getAttribute('data-cal')) + parseFloat(list3[index3].getAttribute('data-cal'))).toFixed(2);
+  results.appendChild(p1);
+  results.appendChild(h2);
+  results.appendChild(p2);
+  results.appendChild(h3);
+  results.appendChild(p3);
+  results.appendChild(p4);
   
 }
-
+  
 
 document.querySelector("#subBtn").addEventListener('click', displayResults);
 

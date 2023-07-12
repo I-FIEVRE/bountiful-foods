@@ -397,26 +397,12 @@ figure {line-height: 1;}
     color: var(--primary-color);
     border: 3px inset var(--primary-color);
 }
-.results input {
-	background-color: #ffffff;
-	border: none;	
+
+.results {
 	text-align: center;
 	font-weight: bold;
 }
-#orderDate {margin-top: 2rem;}
-#first-name {
-	margin-top: 1rem;
-	color: var(--primary-color); 
-}
-#fruits {
-	display:flex; 
-	flex-direction: row; 
-	max-width: 30rem;
-	margin-left: auto;   
-	margin-right: auto;
-}
-#fr1, #fr2, #fr3 {color: var(--month-color);}
-#comment {max-width: 60rem;}
+
 /* about us */
 .grid-us h1 { text-align: center;}
 .grid-us p, .info h2 { margin: 1rem;}
