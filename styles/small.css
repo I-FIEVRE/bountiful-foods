@@ -276,6 +276,7 @@ main h3 {
 	height: auto;
 	box-shadow: 5px 5px 3px rgba(86, 85, 85, 0.819);
 }
+.fresh img {max-width: 80%;}
 .choice img {
 	padding: 0.2rem;
 	background-color: var(--accent1-color);
