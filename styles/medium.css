@@ -97,7 +97,7 @@
         .current-weather { margin: 1rem 2rem;}
         .today, .days { column-gap: 1rem;}   
         .days h3 {font-size: 1rem;}
-        .mySlides img { width: 60%;}
+        .mySlides img { width: 50%;}
         .prev { left: 2.5rem;	}
         .next { right: 2.5rem;}
     }
