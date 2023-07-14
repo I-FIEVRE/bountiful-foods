@@ -27,11 +27,8 @@
         font-size: 1.2rem;
         border-radius: 15px;
     }
-    .social { 
-        grid-area: social;
-       /* margin-top: 1.5rem;*/
-    }
-    .social hr {display: none;}
+    .social { grid-area: social;}
+    .social hr { display: none;}
     .date {
         grid-area: date;
         text-align: end;
