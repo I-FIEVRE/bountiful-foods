@@ -80,8 +80,8 @@
     .location1{ width: 400px;}
     #location { width: 60%;}
    .gmap_canvas, .gmap_iframe  {
-        width:600px;
-        height:400px;
+        width:540px;
+        height:360px;
     }
     /*footer*/
     .base {display: none;}

@@ -428,8 +428,8 @@ figure {line-height: 1;}
 }
 .gmap_canvas { overflow:hidden;}
 .gmap_canvas, .gmap_iframe {
-	width:300px;
-	height:200px;
+	width:270px;
+	height:180px;
 }
 /* footer */
 footer {
