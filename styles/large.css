@@ -89,6 +89,7 @@
     /* about us */
     .grid-us h1{ font-size: 2rem;}
     .grid-us p { margin: 1rem 6rem;}
+    .location1 p {margin: 1rem;}
     .gmap_canvas, .gmap_iframe {
         width:720px;
         height:480px;
