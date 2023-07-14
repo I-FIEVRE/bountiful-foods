@@ -31,6 +31,7 @@
         grid-area: social;
        /* margin-top: 1.5rem;*/
     }
+    .social hr {display: none;}
     .date {
         grid-area: date;
         text-align: end;

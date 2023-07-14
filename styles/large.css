@@ -49,6 +49,7 @@
         line-height: 1.2;
     }
     .social hr {
+        display: block;
         height: 2px;
         margin: 1rem;
       }
