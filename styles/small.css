@@ -442,7 +442,15 @@ footer h3 {margin-top: 1rem;}
 footer hr {margin-top: 0.5rem;}
 .base { display: block;}
 .medium {display: none;}
+/* resource */
+.date1 {padding: 1rem;}
+.resource p {margin: 0.2rem auto;}
 @media only screen and (max-width: 450px) {
 	footer h3 {font-size: 0.9rem;}
 	.grid-fresh h1, .grid-us h1 {font-size: 1.1rem;}
+	.resource p {
+		font-size: 0.7rem; 
+		margin: 0.5rem; 
+		padding: 0;
+	}
 }
