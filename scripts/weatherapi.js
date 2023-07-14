@@ -42,7 +42,9 @@ function  displayResults(weatherData) {
     weatherIcon.setAttribute('alt', desc);
    
     captionDesc.textContent = desc.replace(/(^|\s)\w/g, l => l.toUpperCase());
+
 }
+
 function  display(forcastData) {
   
   temp1.innerHTML = `<strong>${forcastData.list[8].main.temp.toFixed(0)}</strong>`; // 3 hour forecast data: so 3 x 8 = 24 h
