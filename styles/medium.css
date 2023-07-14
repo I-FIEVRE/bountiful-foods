@@ -81,6 +81,10 @@
     .grid-us p { margin: 1rem 3rem;}
     .location1{ width: 400px;}
     #location { width: 60%;}
+   .gmap_canvas, .gmap_iframe  {
+        width:600px;
+        height:400px;
+    }
     /*footer*/
     .base {display: none;}
     .medium {display: block;}
