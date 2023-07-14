@@ -183,6 +183,7 @@ hr {
 	margin-top: 1rem;
 	position: relative;
 }  
+.grid-home { margin-top: 1rem;}
 .mySlides { display: none;}
 .mySlides img {
     display: block;
