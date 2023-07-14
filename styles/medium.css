@@ -34,6 +34,7 @@
         text-align: end;
     }
     .home-title { font-size: 1.8rem;}  
+    .container { margin-top: 2rem;}
     .prev { left: 1rem;}
     .next { right: 1rem;}
     .caption-container p { font-size: 1.6rem;}

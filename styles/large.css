@@ -7,10 +7,10 @@
         display: grid;
         margin: auto 1rem;
         grid-template-columns: 20% 60% 20%;
-        grid-template-rows: 80% 20%;
+        grid-template-rows: 60% 40%;
         grid-template-areas:
         'image nav-li social'
-        '. date .';
+        'image date social';
         align-items: center;
     }
     #logo {

@@ -179,7 +179,10 @@ hr {
 	font-size: 1.6rem;
 	text-align: center;
 }  
-.container { position: relative;}  
+.container { 
+	margin-top: 1rem;
+	position: relative;
+}  
 .mySlides { display: none;}
 .mySlides img {
     display: block;
