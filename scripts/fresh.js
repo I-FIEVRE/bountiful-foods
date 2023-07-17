@@ -130,7 +130,6 @@ function displayResults() {
 let currentNumber = 0;
 let lastNumberDrink = Number(window.localStorage.getItem("lastNumberDrink-ls")) || 0;
 currentNumber = lastNumberDrink + 1;
-console.log(currentNumber);
 localStorage.setItem("lastNumberDrink-ls", currentNumber);
 }
   
