@@ -407,12 +407,12 @@ figure {line-height: 1;}
 /* about us */
 .grid-us h1 { text-align: center;}
 .grid-us p, .info h2 { margin: 1rem;}
-.location1, #location, .gmap_canvas {
+.location1, #location, .gmap-canvas {
 	border: 3px inset var(--secondary-color);
 	border-radius: 10px;
 	box-shadow: var(--primary-color) 0px 2px 5px -1px, var(--accent2-color) 0px 1px 3px -1px;
 }
-#location, .gmap_canvas {
+#location, .gmap-canvas {
 	display: block;
 	margin: 2rem auto;
 }
@@ -427,8 +427,8 @@ figure {line-height: 1;}
 	width: 80%;
 	padding: 0.5rem;
 }
-.gmap_canvas { overflow:hidden;}
-.gmap_canvas, .gmap_iframe {
+.gmap-canvas { overflow:hidden;}
+.gmap-canvas, .gmap-iframe {
 	width:270px;
 	height:180px;
 }
