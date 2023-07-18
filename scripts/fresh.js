@@ -127,13 +127,20 @@ function displayResults() {
   drink.appendChild(p4);
   results.appendChild(drink);
 
-let currentNumber = 0;
-let lastNumberDrink = Number(window.localStorage.getItem("lastNumberDrink-ls")) || 0;
-currentNumber = lastNumberDrink + 1;
-localStorage.setItem("lastNumberDrink-ls", currentNumber);
+  let currentNumber = 0;
+  let lastNumberDrink = Number(window.localStorage.getItem("lastNumberDrink-ls")) || 0;
+  currentNumber = lastNumberDrink + 1;
+  localStorage.setItem("lastNumberDrink-ls", currentNumber);
+
 }
-  
-document.querySelector("#subBtn").addEventListener('click', displayResults);
 
 getFruitData(url); 
+
+document.querySelector("#subBtn").addEventListener('click', function(event){
+  displayResults();
+  event.preventDefault();
+}); 
+
+
+
 
