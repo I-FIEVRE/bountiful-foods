@@ -136,11 +136,26 @@ function displayResults() {
 
 getFruitData(url); 
 
-document.querySelector("#subBtn").addEventListener('click', function(event){
-  displayResults();
-  event.preventDefault();
-}); 
+function display() {
+  const name1 = document.querySelector("#name1");
+  const mail = document.querySelector("#mail");
+  const phone = document.querySelector("#phone");
+  if (name1.value.length == 0) {       //because attribute "required" doesn't work in my code with the method preventDefault()
+			name1.focus();                            
+			alert(' First Name is required!');                                        
+	} else if (mail.value.length == 0) {
+      mail.focus();                            
+			alert('Email is required!'); 
+    } else if (phone.value.length == 0) {
+      phone.focus();                            
+			alert('Phone is required!'); 
+    } else {displayResults();}
+}
 
+document.querySelector("#subBtn").addEventListener('click', function(event){
+  event.preventDefault();       // to show the result on the page using type "submit"
+  display();  
+});
 
 
 
